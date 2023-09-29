@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <!-- El siguiente div alinea el contenido al centro y le aplica un estilo de borde, ancho, y margen. -->
+    <div align="center" >
+        <!--Se agrega un encabezado de nivel 1 para el titulo "Matricula financiera" -->
+        <h1>Matricula financiera</h1>
+        <!-- Se inserta una imagen de inicio de sesión. -->
+        <img src="C:\Users\johnn\OneDrive\Escritorio\5to Semestre\PROGRAMACIÓN IV\OIP (1).jpg" alt="Imagen de inicio de sesión" width="100" height="100"><br><br>
+       
+        <!-- Se agrega un encabezado de nivel 2 para el título "Iniciar sesión"  -->
+        <h2 >Iniciar sesión</h2>
+        <!-- Se crea un formulario que envía datos a una URL específica cuando se envía. -->
+        <form action="file:///C:/Users/johnn/OneDrive/Escritorio/5to%20Semestre/PROGRAMACI%C3%93N%20IV/curso.html" method="post">
+            <!-- Se agrega una etiqueta de texto para el campo de nombre de usuario. -->
+            <label for="username">Nombre de usuario:</label><br>
+            <!-- Se crea un campo de entrada de texto para el nombre de usuario que es obligatorio. -->
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <!-- Se agrega una etiqueta de texto para el campo de contraseña. -->
+            <label for="password">Contraseña:</label><br>
+            <!-- Se crea un campo de entrada de contraseña que es obligatorio. -->
+            <input type="password" id="password" name="password" required><br><br>
+
+            <!-- Se añade un botón de envío que tiene estilos de color, relleno, borde y cursor. -->
+            <input type="submit" value="Iniciar sesión">
+        </form>
+    </div>
+</body>
+</html>
