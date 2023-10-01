@@ -1,0 +1,29 @@
+/*
+*******************************************************
+Estilos del formulario sin contar el sidebar
+(campos, títulos de las secciones, columnas)
+*******************************************************
+*/
+
+/*Anotaciones: 
+-------------------------------------------------------
+flex: 
+Es un método de diseño de página, con el podemos 
+compaginar elementos en filas o columnas iguales.
+
+flex-wrap: 
+Es una regla del flex y su función es delimitar el flex 
+para que no se salga de su contenedor, respetando sus dimensiones.
+
+flex:100px:
+Tamaño mínimo del flex
+*/
+
+/*Divide cualquier contenido en columnas*/
+.items_cuatro_columnas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
