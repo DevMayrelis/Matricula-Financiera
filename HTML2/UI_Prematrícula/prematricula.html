@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <!--____________________________________________________________________________
+                                        Inicio
+    ______________________________________________________________________________-->
+    <!------------------ Inicio de la página -------------------->
+    <head>
+        <meta charset="utf-8">
+        <title>SmartTuit Prematrícula</title>
+        <!--Vinculamos syles.css en el index.
+        rel: atributo donde declaramos el nombre de la hoja de estilo
+        href: atributo que define la ubicación de esa hoja de estilo-->
+        <link rel="stylesheet" href="./CSS/styles.css">
+    <head>
+
+    <!--____________________________________________________________________________
+                                       Contenido
+    ______________________________________________________________________________-->
+    <!------------------ Contenido de la página -------------------->
+    <body>
+        <section class="contenedor_global">
+            <form action="" class="formulario_registro">
+                
+
+                <!--*************************  Sección (datos de los padres)  *************************-->
+                <section class="datosPadres_cont" id="datosPadres_cont">
+                    <h3>Datos de los padres</h3>
+                    <!-- Datos del padre -->
+                    <h4 class="titulo_seccion">Padre</h4>
+                    <section class="datos_padre">
+                        <div class="items_cuatro_columnas"> <!--Fila 1-->
+                            <label for="nombre1_padre">
+                                <p>Primer nombre</p>
+                                <input type="text" name="nombre1_padre" id="nombre1_padre" placeholder="Ingresa tu primer nombre">
+                            </label>
+                            <label for="nombre2_padre">
+                                <p>Segundo nombre</p>
+                                <input type="text" name="nombre2_padre" id="nombre2_padre" placeholder="Ingresa tu segundo nombre">
+                            </label>
+                            <label for="apellido1_padre">
+                                <p>Primer apellido</p>
+                                <input type="text" name="apellido1_padre" id="apellido1_padre" placeholder="Ingresa tu primer apellido">
+                            </label>
+                            <label for="apellido2_padre">
+                                <p>Segundo apellido</p>
+                                <input type="text" name="apellido2_padre" id="apellido2_padre" placeholder="Ingresa tu segundo apellido">
+                            </label>
+                        </div>
+
+                        <div class="items_cuatro_columnas"> <!--Fila 2-->
+                            <label for="DNI_padre">
+                                <p>Identificación</p>
+                                <input type="text" name="DNI_padre" id="DNI_padre" placeholder="Ingresa tu DNI">
+                            </label>
+                            <label for="Ocupacion_padre">
+                                <p>Ocupación</p>
+                                <input type="text" name="ocupacion_padre" id="ocupacion_padre" placeholder="Ingresa tu ocupación">
+                            </label>
+                        </div>
+                    </section>
+
+                    <!-- Datos de la madre -->
+                    <h4 class="titulo_seccion">Madre</h4>
+                    <section class="datos_madre">
+                        <div class="items_cuatro_columnas"> <!--Fila 1-->
+                            <label for="nombre1_madre">
+                                <p>Primer nombre</p>
+                                <input type="text" name="nombre1_madre" id="nombre1_madre" placeholder="Ingresa tu primer nombre">
+                            </label>
+                            <label for="nombre2_madre">
+                                <p>Segundo nombre</p>
+                                <input type="text" name="nombre2_madre" id="nombre2_madre" placeholder="Ingresa tu segundo nombre">
+                            </label>
+                            <label for="apellido1_madre">
+                                <p>Primer apellido</p>
+                                <input type="text" name="apellido1_madre" id="apellido1_madre" placeholder="Ingresa tu primer apellido">
+                            </label>
+                            <label for="apellido2_madre">
+                                <p>Segundo apellido</p>
+                                <input type="text" name="apellido2_madre" id="apellido2_madre" placeholder="Ingresa tu segundo apellido">
+                            </label>
+                        </div>
+
+                        <div class="items_cuatro_columnas"> <!--Fila 2-->
+                            <label for="DNI_madre">
+                                <p>Identificación</p>
+                                <input type="text" name="DNI_madre" id="DNI_madre" placeholder="Ingresa tu DNI">
+                            </label>
+                            <label for="Ocupacion_madre">
+                                <p>Ocupación</p>
+                                <input type="text" name="ocupacion_madre" id="ocupacion_madre" placeholder="Ingresa tu ocupación">
+                            </label>
+                        </div>
+                    </section>
+                </section>
+
+
+                <!--*************************  Sección (datos del estudiante)  *************************-->
+                <section class="datosEstudiantes_cont" id="datosEstudiantes_cont">
+                    <h3>Datos de los estudiantes</h3>
+
+                    <!-- Lista de los estudiantes agregados-->
+                    <section>
+                        <!-- Aquí la lista de los estudiantes agregados-->
+                    </section>
+
+                    <hr>
+
+                    <h4>Datos de ...</h4>
+
+                    <!-- Campos del estudiante -->
+                    <section>
+                        <!-- Datos personales -->
+                        <h4 class="titulo_seccion">Datos personales</h4>
+                        <section class="datosPersonales_estudiante">
+                            <!-- contenido -->
+                        </section>
+
+                        <!-- Datos de ubicación -->
+                        <h4 class="titulo_seccion">Datos de ubicación</h4>
+                        <section class="ubicacion_estudiante">
+                            <!-- contenido -->
+                        </section>
+
+                        <!-- .... -->
+                    </section>
+                </section>
+
+
+                <!--*************************  Sección (datos de la institución)  *************************-->
+                <section class="datosMatricula_cont" id="datosMatricula_cont">
+                    <h3>Datos de la institución</h3>
+                    <!-- Datos de la institución -->
+                    <h4 class="titulo_seccion">Datos de la institución</h4>
+                    <section class="datos_institucion">
+                        <div class="items_cuatro_columnas"> <!--Fila 1-->
+                            <!--Datos...-->
+                        </div>
+                    </section>
+                </section>
+
+                
+                <button class="guardar_btn"> Sumbit </button>
+            </form>
+        </section>
+
+        
+    </body>
+ </html> 
