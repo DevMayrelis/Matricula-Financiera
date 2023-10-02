@@ -19,10 +19,41 @@
     ______________________________________________________________________________-->
     <!------------------ Contenido de la página -------------------->
     <body>
-        <section class="contenedor_global">
+
+        <!--=================================================
+        Sidebar 
+        ==================================================-->
+        <div class="sidebar">
+            <!--Título del menú-->
+            <center>
+                <h2>Prematrícula</h2>
+            </center>
+
+            <!--Menú-->
+            <section class="contenedor_global_sidebar">
+                 <!--Items del menú-->
+                <div class="fila"> <!--Fila 1-->
+                    <div class="circulo"></div> 
+                    <h5>Datos de los padres</h5>
+                </div>
+                <div class="fila"> <!--Fila 2-->
+                    <div class="circulo"></div> 
+                    <h5>Datos de los estudiantes</h5>
+                </div>
+                <div class="fila"> <!--Fila 3-->
+                    <div class="circulo"></div> 
+                    <h5>Finalización</h5>
+                </div>
+            </section>
+        </div>
+
+
+        <!--=================================================
+        Formulario 
+        ==================================================-->
+        <div class="contenedor_global_formulario">
             <form action="" class="formulario_registro">
                 
-
                 <!--*************************  Sección (datos de los padres)  *************************-->
                 <section class="datosPadres_cont" id="datosPadres_cont">
                     <h3>Datos de los padres</h3>
@@ -140,11 +171,9 @@
                     </section>
                 </section>
 
-                
                 <button class="guardar_btn"> Sumbit </button>
             </form>
-        </section>
+        </div>
 
-        
     </body>
  </html> 
