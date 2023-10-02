@@ -20,8 +20,12 @@ flex:100px:
 Tamaño mínimo del flex
 */
 
+
+/*...................DATOS DE LOS PADRES................
+......................................................*/
+
 /*Divide cualquier contenido en columnas*/
-.items_cuatro_columnas {
+.form_columnas {
     display: flex;
     flex-wrap: wrap;
 }
@@ -36,14 +40,14 @@ Tamaño mínimo del flex
 }
 
 section h3{ 
-    /*En el contenido del formulario, se modifican todos los 
+    /*Se modifican todos los 
     títulos de cada una de las secciones principales*/
     color:rgb(244, 69, 56);
     text-align: center;
 }
 
 .titulo_seccion{ 
-    /*En el contenido del formulario, se modifican todos los 
+    /*Se modifican todos los 
     títulos de cada una de las secciones secundarias*/
     color: white;
     text-align: center;
@@ -52,3 +56,32 @@ section h3{
     border-top-right-radius: 15px;
     padding: 3px;
 }
+
+.datos_padre label, .datos_madre label{
+    /*Propiedades de todos los label del formulario */
+    margin: .3rem 1rem;
+    color:rgb(244, 69, 56);
+    /*font-size: .9rem;
+    font-weight: 600;*/
+}
+
+.datos_padre, .datos_madre{
+    /*Ajusta el margen de las dos secciones de los datos de 
+    los acudientes*/
+    margin-top: -20px;
+}
+
+.input_text{
+    border-radius: 5px;
+    height: 21px;
+    border: 1px solid rgb(218, 218, 218); /* Cambiar el grosor, estilo y color del borde */
+    width: 200px;
+}
+
+.input_text:focus {
+    border-color: #f8571c; /* Cambia el color del borde al hacer clic */
+    box-shadow: rgba(93, 69, 50, 0.097) 0px 13px 27px -5px, rgba(0, 0, 0, 0.103) 0px 8px 16px -8px;
+    outline: none;
+}
+
+
