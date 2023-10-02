@@ -1,5 +1,6 @@
 /*
 *******************************************************
+FORMULARIO.
 Estilos del formulario sin contar el sidebar
 (campos, títulos de las secciones, columnas)
 *******************************************************
@@ -25,5 +26,29 @@ Tamaño mínimo del flex
     flex-wrap: wrap;
 }
 
+.contenedor_global_formulario{
+    position: static;
+    background-color: white;
+    margin-left: 265px;
+    width: 80;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
+section h3{ 
+    /*En el contenido del formulario, se modifican todos los 
+    títulos de cada una de las secciones principales*/
+    color:rgb(244, 69, 56);
+    text-align: center;
+}
 
+.titulo_seccion{ 
+    /*En el contenido del formulario, se modifican todos los 
+    títulos de cada una de las secciones secundarias*/
+    color: white;
+    text-align: center;
+    background-color: rgb(247, 87, 87);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 3px;
+}
