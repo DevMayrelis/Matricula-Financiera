@@ -80,7 +80,7 @@ section h3{
 
 .input_text:focus {
     border-color: #f8571c; /* Cambia el color del borde al hacer clic */
-    box-shadow: rgba(93, 69, 50, 0.097) 0px 13px 27px -5px, rgba(0, 0, 0, 0.103) 0px 8px 16px -8px;
+    box-shadow: rgba(245, 164, 97, 0.097) 0px 13px 27px -5px, rgba(0, 0, 0, 0.103) 0px 8px 16px -8px;
     outline: none;
 }
 
