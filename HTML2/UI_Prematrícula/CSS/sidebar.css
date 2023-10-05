@@ -6,7 +6,7 @@ SIDEBAR.
 .sidebar {
     width: 230px; /* Ancho del sidebar */
     height: 100%;
-    position: sticky; /* Fija el sidebar en su posición */
+    position: fixed; /* Fija el sidebar en su posición */
     left: 0; /* Lo fija en el lado izquierdo */
     top: 0; /* Lo fija en la parte superior */
     background-color: rgb(244, 67, 54); /* Color de fondo del sidebar */
