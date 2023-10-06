@@ -1,0 +1,42 @@
+/* Margen de la pagina*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Color de fondo rojo a la navegación superior */
+ .topnav {
+        position: relative;
+        background-color: #d41d1d;
+        overflow: hidden;
+  }
+  
+  /* Enlaces dentro de la barra de navegación. */
+  .topnav a {
+     float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+  }
+  
+  /* Color de los enlaces al pasar el mouse */
+  .topnav a:hover {
+    background-color: #f2eded;
+    color: black;
+  }
+  
+  /* Color al enlace activo/actual */
+  
+  .topnav a.active {
+    background-color: #d02b0a;
+    color: white;
+  }
+
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+  }
+  
