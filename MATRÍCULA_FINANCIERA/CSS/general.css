@@ -1,0 +1,36 @@
+/*
+SELECTORES COMPARTIDOS
+****************************************************************************************
+Aquí van todos los selectores que pueden ser compartidos entre varios 
+archivos html,con el fin de no repetir código y fomentar la recursividad.
+
+    Anotaciones: 
+    -------------------------------------------------------
+    La mayoría de los elementos deben estar sujetos a un contenedor, para limitar
+    sus dimensiones con respecto al mismo.
+
+****************************************************************************************/
+
+/*CAMPOS DE TEXTO DEL DOCUMENTO ---------------------/
+
+    /* Titulo */
+    .titulo-campo-texto{  
+        margin: .3rem 1rem;
+        color:rgb(244, 69, 56);
+    }
+
+    /* Campo de texto */
+    .campo-texto{
+        width: 100%;
+        height: 28px;
+        border-radius: 9px; 
+        border: 1px solid rgb(218, 218, 218); /*Color del borde*/
+        padding-left: 15px; /* Ajusta el espacio a la izquierda del texto ingresado */
+        box-sizing: border-box; /* Con esta regla, el campo no se saldra del contenedor*/
+    }
+    .campo-texto:focus {
+        border-color: #f8571c; /* Cambia el color del borde al hacer clic */
+        box-shadow: rgba(245, 164, 97, 0.097) 0px 13px 27px -5px, 
+                    rgba(0, 0, 0, 0.103) 0px 8px 16px -8px; /*Sombra*/
+        outline: none;
+    }

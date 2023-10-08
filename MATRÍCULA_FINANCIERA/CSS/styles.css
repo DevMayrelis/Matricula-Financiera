@@ -1,0 +1,10 @@
+/*-------------------------------------  hoja de estilos para todas las interfaces*/
+@import  "./general.css";
+
+/*-------------------------------------  (PREMATRÍCULA)*/
+@import "UI_Prematrícula/prematricula-cont.css";
+@import "UI_Prematrícula/prematricula-sidebar.css";
+
+/*-------------------------------------  (ADMINISTRADOR O USUARIO)*/
+/*-------------------------------------  (...)*/
+/*-------------------------------------  (...)*/
