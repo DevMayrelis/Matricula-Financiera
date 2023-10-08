@@ -40,3 +40,7 @@
     float: right;
   }
   
+
+  .cellspacing img {
+    border-radius: 1px;
+  }
