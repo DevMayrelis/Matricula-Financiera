@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <!--____________________________________________________________________________
+                                        Inicio
+    ______________________________________________________________________________-->
+    <!------------------ Inicio de la página -------------------->
+    <head>
+        <meta charset="utf-8">
+        <title>SmartTuit Prematrícula</title>
+        <!-- Paquete de para los íconos -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />        <!--Vinculamos syles.css en el index.
+        rel: atributo donde declaramos el nombre de la hoja de estilo
+        href: atributo que define la ubicación de esa hoja de estilo-->
+        <link rel="stylesheet" href="/MATRÍCULA_FINANCIERA\CSS\styles.css"> 
+    <head>
+
+    <!--____________________________________________________________________________
+                                       Contenido
+    ______________________________________________________________________________-->
+    <!------------------ Contenido de la página -------------------->
+    <body>
+
+        <!--=================================================
+        Sidebar 
+        ==================================================-->
+        <div class="sidebar">
+            <!--Título del menú-->
+            <center>
+                <h2>Prematrícula</h2>
+            </center>
+
+            <!--Menú-->
+            <section class="contenedor_global_sidebar">
+                 <!--Items del menú-->
+                <div class="fila"> <!--Fila 1-->
+                    <div class="circulo"></div> 
+                    <h5>Datos de los padres</h5>
+                </div>
+                <div class="fila"> <!--Fila 2-->
+                    <div class="circulo"></div> 
+                    <h5>Datos de los estudiantes</h5>
+                </div>
+                <div class="fila"> <!--Fila 3-->
+                    <div class="circulo"></div> 
+                    <h5>Finalización</h5>
+                </div>
+            </section>
+        </div>
+
+
+        <!--=================================================
+        Formulario 
+        ==================================================-->
+        <div class="contenedor-global-formulario">
+            <form action="" class="formulario_registro">
+                
+                <!--*************************  Sección (datos de los padres)  *************************-->
+                <section class="datosPadres_cont" id="datosPadres_cont">
+
+                    <h3>Datos de los padres</h3>
+                    <!-- Datos del padre -->
+                    <h4 class="titulo-seccion">Padre </h4>
+                    <section class="datos-padre">
+                        <div class = "bloque-campo-texto">
+                            <label for="nombre1_padre" class="titulo-campo-texto">
+                                <p>Primer nombre</p>
+                                <input type="text" name="nombre1_padre" id="nombre1_padre" placeholder="Ingresa tu primer nombre" class="campo-texto">
+                            </label>
+                        </div>
+
+                        <div class = "bloque-campo-texto">
+                            <label for="nombre2_padre" class="titulo-campo-texto">
+                                <p>Segundo nombre</p>
+                                <input type="text" name="nombre2_padre" id="nombre2_padre" placeholder="Ingresa tu segundo nombre" class="campo-texto">
+                            </label>
+                        </div>
+
+                        <div class = "bloque-campo-texto">
+                            <label for="apellido1_padre" class="titulo-campo-texto">
+                                <p>Primer apellido</p>
+                                <input type="text" name="apellido1_padre" id="apellido1_padre" placeholder="Ingresa tu primer apellido" class="campo-texto">
+                            </label>
+                        </div>
+                        
+                        <div class = "bloque-campo-texto">
+                            <label for="apellido2_padre" class="titulo-campo-texto">
+                                <p>Segundo apellido</p>
+                                <input type="text" name="apellido2_padre" id="apellido2_padre" placeholder="Ingresa tu segundo apellido" class="campo-texto">
+                            </label>
+                        </div>
+
+                        <div class = "bloque-campo-texto">
+                            <label for="DNI_padre" class="titulo-campo-texto">
+                                <p>Identificación</p>
+                                <input type="text" name="DNI_padre" id="DNI_padre" placeholder="Ingresa tu DNI" class="campo-texto">
+                            </label>
+                        </div>
+
+                        <div class = "bloque-campo-texto">
+                            <label for="Ocupacion_padre" class="titulo-campo-texto">
+                                <p>Ocupación</p>
+                                <input type="text" name="ocupacion_padre" id="ocupacion_padre" placeholder="Ingresa tu ocupación" class="campo-texto">
+                            </label>
+                        </div>
+                    </section>
+
+                    <!-- Datos de la madre -->
+                    <h4 class="titulo-seccion">Madre</h4>
+                    <section class="datos-madre">
+                        <div class = "bloque-campo-texto">
+                            <label for="nombre1_madre" class="titulo-campo-texto">
+                                <p>Primer nombre</p>
+                                <input type="text" name="nombre1_madre" id="nombre1_madre" placeholder="Ingresa tu primer nombre" class="campo-texto">
+                            </label>
+                        </div>
+
+                        <div class = "bloque-campo-texto">
+                            <label for="nombre2_madre" class="titulo-campo-texto">
+                                <p>Segundo nombre</p>
+                                <input type="text" name="nombre2_madre" id="nombre2_madre" placeholder="Ingresa tu segundo nombre" class="campo-texto">
+                            </label>
+                        </div>
+
+                        <div class = "bloque-campo-texto">
+                            <label for="apellido1_madre" class="titulo-campo-texto">
+                                <p>Primer apellido</p>
+                                <input type="text" name="apellido1_madre" id="apellido1_madre" placeholder="Ingresa tu primer apellido" class="campo-texto">
+                            </label>
+                        </div>
+
+                        <div class = "bloque-campo-texto">
+                            <label for="apellido2_madre" class="titulo-campo-texto">
+                                <p>Segundo apellido</p>
+                                <input type="text" name="apellido2_madre" id="apellido2_madre" placeholder="Ingresa tu segundo apellido" class="campo-texto">
+                            </label>
+                        </div>
+
+                        <div class = "bloque-campo-texto">
+                            <label for="DNI_madre" class="titulo-campo-texto">
+                                <p>Identificación</p>
+                                <input type="text" name="DNI_madre" id="DNI_madre" placeholder="Ingresa tu DNI" class="campo-texto">
+                            </label>
+                        </div>
+
+                        <div class = "bloque-campo-texto">
+                            <label for="Ocupacion_madre" class="titulo-campo-texto">
+                                <p>Ocupación</p>
+                                <input type="text" name="ocupacion_madre" id="ocupacion_madre" placeholder="Ingresa tu ocupación" class="campo-texto">
+                            </label>
+                        </div>
+                    </section>
+                    
+                </section>
+
+
+                <!--*************************  Sección (datos del estudiante)  *************************-->
+                <section class="datosEstudiantes-cont" id="datosEstudiantes-cont">
+                    <h3>Datos de los estudiantes</h3>
+
+                    <!-- Lista de los estudiantes agregados-->
+                    <section>
+                        <!-- Aquí la lista de los estudiantes agregados-->
+                        <div>
+                            <div>
+                                <div class="recuadro">
+                                    <span class="material-symbols-outlined icon">person</span>
+                                    <span>Estudiante 1</span>
+                                </div>
+                            </div>   
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <h4>Datos de ...</h4>
+
+                    <!-- Campos del estudiante -->
+                    <section>
+                        <!-- Datos personales -->
+                        <h4 class="titulo-seccion">Datos personales</h4>
+                        <section class="datosPersonales-estudiante">
+                            <!-- contenido -->
+                        </section>
+
+                        <!-- Datos de ubicación -->
+                        <h4 class="titulo-seccion">Datos de ubicación</h4>
+                        <section class="ubicacion-estudiante">
+                            <!-- contenido -->
+                        </section>
+                        <!-- .... -->
+                    </section>
+                </section>
+
+
+                <!--*************************  Sección (datos de la institución)  *************************-->
+                <section class="datosMatricula-cont" id="datosMatricula-cont">
+                    <h3>Datos de la institución</h3>
+                    <!-- Datos de la institución -->
+                    <h4 class="titulo-seccion">Datos de la institución</h4>
+                    <section class="datos-institucion">
+                        <div class="form-columnas"> <!--Fila 1-->
+                            <!--Datos...-->
+                        </div>
+                    </section>
+                </section>
+
+                <!-- <button class="guardar-btn"> Sumbit </button> -->
+                <button class="button-53" role="button">Button 53</button>
+            </form>
+        </div>
+
+    </body>
+ </html> 
