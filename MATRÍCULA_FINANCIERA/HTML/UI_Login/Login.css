@@ -30,7 +30,7 @@
   /* Color al enlace activo/actual */
   
   .topnav a.active {
-    background-color: #d02b0a;
+    background-color: #b9d00a;
     color: white;
   }
 
@@ -39,8 +39,5 @@
   .topnav-right {
     float: right;
   }
+ 
   
-
-  .cellspacing img {
-    border-radius: 1px;
-  }
