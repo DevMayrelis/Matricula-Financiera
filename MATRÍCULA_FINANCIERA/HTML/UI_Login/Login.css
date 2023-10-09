@@ -40,4 +40,19 @@
     float: right;
   }
  
-  
+
+  /*------------- Estilo para los elementos td con la clase material-symbols-outlined -----------------------*/
+  .material-symbols-outlined {
+    position: relative; /* Establece la posicion relativa para poder posicionar el icono */
+  }
+
+  /* Estilo para el icono */
+  .icon {
+    font-family: 'Material Symbols Outlined', sans-serif; /* Utiliza la fuente de iconos */
+    opacity: 0.5; /* Establece la opacidad del icono */
+  }
+
+  /* Estilo para la celda que contiene el porrafo y el icono */
+  .icon-cell {
+    vertical-align: top; /* Alinea el contenido en la parte superior de la celda */
+  }
