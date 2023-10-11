@@ -4,16 +4,18 @@
 	padding: 0;
 }
 
+
 /*Color de fondo rojo a la navegación superior */
  .topnav {
-        position: relative;
+        position: fixed;
         background-color: #d41d1d;
         overflow: hidden;
   }
   
   /* Enlaces dentro de la barra de navegación. */
   .topnav a {
-     float: left;
+   float: left;
+   display: block;
    color: #f2f2f2;
    text-align: center;
    padding: 14px 16px;
@@ -30,7 +32,7 @@
   /* Color al enlace activo/actual */
   
   .topnav a.active {
-    background-color: #b9d00a;
+    background-color: #070707;
     color: white;
   }
 
@@ -39,6 +41,8 @@
   .topnav-right {
     float: right;
   }
+
+
  
 
   /*------------- Estilo para los elementos td con la clase material-symbols-outlined -----------------------*/
