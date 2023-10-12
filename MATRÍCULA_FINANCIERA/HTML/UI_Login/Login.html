@@ -5,88 +5,95 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <Title>Login</Title>
-    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="Login.css">
     <!-- Link de los iconos de la etiqueta td-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
 </head>
 
 <!-- Cuerpo del login.... -->
 <body>
-<!-- NAVEGACION SUPERIOR RESPONSIVA-->
-  <div class="topnav" id="myTopnav" >
-    <a href="#STSmarTuit" class="active">STSmarTuit</a>
-    <!-- Enlaces alineados a la derecha -->
-    <div class="topnav-right">
-    <a href="#inicio">Inicio</a>
-    <a href="#acercadenosotros">Acerca de nosotros</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div> 
+        <!-- Navegacion superior -->
+        <div class="topnav" id="myTopnav" >
+            <a href="#STSmarTuit" class="active">STSmarTuit</a>
+                    <!-- Enlaces alineados a la derecha -->
+            <div class="topnav-right">
+            <a href="#inicio">Inicio</a>
+            <a href="#acercadenosotros">Acerca de nosotros</a>
+          </div>
+        </div>       
 
-<div style="display: flex; justify-content: space-around;">
-
+    <div style="display: flex; justify-content: space-around;">
 
 <!--PARTE IZQUI DE LA PAGINA-->
 <section>
-        <div>
-            <table cellspacing="40" class="login-table">
-                <tr>
-                    <th colspan="2"><img src="img/Login2.png" alt="Logo" class="logo-image"></th>
-                </tr>
-                <tr>
-                    <td class="icon-cell">
-                        <p>Gestiona las matrículas de los <br> estudiantes de las instituciones <br> educativas</p>
-                    </td>
-                    <!-- Icono -->
-                    <td class="material-symbols-outlined">
-                        <span class="icon">task_alt</span>
-                    </td>
-                </tr>
-                <tr>
-                    <!-- Icono -->
-                    <td class="material-symbols-outlined">
-                        <span class="icon">task_alt</span>
-                    </td>
-                    <td>Pagos en línea</td>
-                </tr>
-                <tr>
-                    <td class="icon-cell">
-                        <p>Prematrículate en las <br> instituciones de interés</p>
-                    </td>
-                    <!-- Icono -->
-                    <td class="material-symbols-outlined">
-                        <span class="icon">task_alt</span>
-                    </td>
-                </tr>
-            </table>
-    </div>
-</section>
-<!--FIN DE LA PARTE IZQUIER DE LA PAGINA-->
+    <div>
+        <table cellspacing="40" class="login-table">
+                <table cellspacing = "40">
+                    <tr>
+                        <th colspan="2"><img src="img/Login2.png" alt="Logo" class="logo-image"></th>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell">
+                            <p>Gestiona las matrículas de los <br> estudiantes de las instituciones <br> educativas</p>
+                        </td>
+                        <!-- Icono -->
+                        <td class="material-symbols-outlined">
+                            <span class="icon">task_alt</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- Icono -->
+                        <td class="material-symbols-outlined">
+                            <span class="icon">task_alt</span>
+                        </td>
+                        <td>Pagos en línea</td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell">
+                            <p>Prematrículate en las <br> instituciones de interés</p>
+                        </td>
+                        <!-- Icono -->
+                        <td class="material-symbols-outlined">
+                            <span class="icon">task_alt</span>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </section>
+        <!--FIN DE LA PARTE IZQUIER DE LA PAGINA-->
 
 <!-- ------------LOGIN----------------->
-
 <section>
-    <form action="" method="POST">
-            <h1>Login</h1>
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="Correo electronico" required>
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="Contraseña" required>
-            <div class="form-actions">
-                <a href="#">Olvidé mi contraseña</a>
-                <a href="#">Cambiar contraseña</a>
-            </div>
-            <button class="button button4">Entrar</button>
-            <!--<button type="submit" class="login-button">Entrar</button>-->
-            <p class="prematricula-info"><b>¿No has realizado tu prematrícula?</b></p>
-            <a href="#">Hazlo ahora</a>
+        <form action="" method="POST">
+            <form action="" class="form-container"></form>
+            <img align src="Img/img.jpg" alt="Imagen de inicio de sesión">
+            <h2 align="center">Login</h2>
+            <label for="id"><b>Documento</b></label>
+            <input type="text" placeholder="Ingrese identificacion" name="identificacion" required>
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="contraseña" placeholder="Ingrese contraseña" name="Contraseña" required>
         </form>
+                    <table cellspacing = "40">
+                        <tr>
+                            <td><a href="#">Olvide mi contraseña</a></td>
+                            <td><a href="#">Cambiar contraseña</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button>Entrar</button></td>
+                        </tr>
+                        <tr>
+                            <td> <b>¿No has realizado <br>tu prematricula?</b></td>
+                            <td><button>Hazlo ahora</button></td>
+                        </tr>
 
-    </div>
-          </section> 
-    </div>   
+                    </table>
+                
+                     </div>
+             </section> 
+        </div>   
     <footer>
         
     </footer>
