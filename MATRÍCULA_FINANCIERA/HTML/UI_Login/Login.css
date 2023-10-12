@@ -60,15 +60,15 @@
   height: 100px; /* Establece la altura deseada para la celda */
 }
 
-
+/*-------------------------------------------------------------------------*/
 /* Estilo para la imagen dentro de la celda */
 .icon-cell img {
-  min-width: 10%; /* Ajusta el ancho de la imagen al del contenedor */
-  min-height: 10%; /* Ajusta la altura de la imagen al 5% del contenedor */
+  min-width: 10%; /* Ajusta el ancho de la imagen al 10% del contenedor */
+  min-height: 10%; /* Ajusta la altura de la imagen al 10% del contenedor */
 }
 
-/*-------------------------------------------------------------------------*/
-/* Estilo para la imagen */
+
+/* Estilo para la imagen Smart */
 .logo-image
  {
   width: 200px; /* Ajusta el ancho según tus preferencias */
@@ -78,18 +78,34 @@
 
 /*-------------------------LOGIN------------------------------------------*/
 /* Estilo para el contenedor del formulario de inicio de sesión */
-.login-container
+
+
+ /* Estilo personalizado para el contenedor del formulario */
+.form-container {
+  max-width: 250px; /* Establece el ancho máximo deseado para hacerlo más pequeño */
+  margin: 0 auto; /* Centra horizontalmente el formulario */
+  padding: 15px; /* Ajusta el espacio interno para hacerlo más compacto */
+  text-align: center;
+  border: 1px solid #ddd; /* Agrega un borde para un aspecto más elegante */
+  border-radius: 5px; /* Agrega bordes redondeados */
+  background-color: #f4f4f4; /* Cambia el color de fondo si lo deseas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave para un aspecto más elegante */
+}
+
+/*.form-container
  {
   text-align: center;
   max-width: 400px;
-  margin: 400px auto; /* Margen superior para separar de la barra de navegación */
+  margin: 200px auto; /* Margen superior para separar de la barra de navegación 
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f4f4f4;
-  box-shadow: 0 0 10px rgba(244, 152, 152, 0.82); /* Agrega sombra al contenedor */
-}
+  box-shadow: 0 0 10px rgba(244, 152, 152, 0.82); /* Agrega sombra al contenedor 
+}*/
 
+
+/*--------------BOTONES---------*/
 /* Estilo para el botón de "Entrar" */
 .login-button {
   background-color: #f20a0a;
@@ -105,7 +121,6 @@
   opacity: 0.8;
 }
 
-/*--------------BOTON---------*/
 /* Full-width inputs */
 input[type=text], input[type=contraseña]
  {
@@ -148,23 +163,25 @@ button:hover
   margin: 4px 2px;
 }
 
-.login-button12 {border-radius: 12px;}
+.login-button {border-radius: 12px;}
 
+/*---------------------------------------------------------------------------------*/
+/* Estilo personalizado para etiquetas de "Documento" y "Contraseña" */
+.custom-label {
+  color: #ff0000; /* Color de texto */
+}
+/*---------------------------------------------------------------------------------*/
 
- Center the avatar image inside this container 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
+/*----------IMAGEN LOGIN--------------*/
+ 
+.imagen-login {
+  background-image: url('Img/img_login.jpg');
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  width: 100px; /* Establece el ancho  */
+  height: 100px; /* Establece la altura */
+  margin: 0 auto; /* Centra horizontalmente el div */
+  text-align: center; /* Centra el contenido del div horizontalmente */
+   
 }
 
- Login image 
-img {
-  width: 40%;
-  border-radius: 50%;
-}
 
-/* Add padding to containers */
-.container
- {
-  padding: 16px;
-}
