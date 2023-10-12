@@ -80,17 +80,44 @@
 /* Estilo para el contenedor del formulario de inicio de sesión */
 
 
- /* Estilo personalizado para el contenedor del formulario */
+ /* Estilo personalizado para el contenedor del formulario 
 .form-container {
-  max-width: 250px; /* Establece el ancho máximo deseado para hacerlo más pequeño */
-  margin: 0 auto; /* Centra horizontalmente el formulario */
-  padding: 15px; /* Ajusta el espacio interno para hacerlo más compacto */
+  max-width: 250px; /* Establece el ancho máximo deseado para hacerlo más pequeño 
+  margin: 0 auto; /* Centra horizontalmente el formulario 
+  padding: 15px; /* Ajusta el espacio interno para hacerlo más compacto 
   text-align: center;
-  border: 1px solid #ddd; /* Agrega un borde para un aspecto más elegante */
-  border-radius: 5px; /* Agrega bordes redondeados */
-  background-color: #f4f4f4; /* Cambia el color de fondo si lo deseas */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave para un aspecto más elegante */
+  border: 1px solid #ddd; /* Agrega un borde para un aspecto más elegante 
+  border-radius: 5px; /* Agrega bordes redondeados 
+  background-color: #f4f4f4; /* Cambia el color de fondo si lo deseas 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave para un aspecto más elegante 
+}*/
+
+
+/* Estilo del contenedor principal que utiliza Flexbox */
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
+
+/* Estilo de las secciones izquierda y derecha */
+.left-section, .right-section {
+  flex: 1;
+}
+
+/* Estilo del formulario de inicio de sesión */
+.form-container {
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /*.form-container
  {
@@ -168,7 +195,7 @@ button:hover
 /*---------------------------------------------------------------------------------*/
 /* Estilo personalizado para etiquetas de "Documento" y "Contraseña" */
 .custom-label {
-  color: #0400ff; /* Color de texto */
+  color: #ff0000; /* Color de texto */
 }
 /*---------------------------------------------------------------------------------*/
 
