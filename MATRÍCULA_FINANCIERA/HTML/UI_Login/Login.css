@@ -151,17 +151,17 @@ button:hover
 .login-button12 {border-radius: 12px;}
 
 
-/* Center the avatar image inside this container 
+ Center the avatar image inside this container 
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
 }
 
- Avatar image 
-img.avatar {
+ Login image 
+img {
   width: 40%;
   border-radius: 50%;
-}*/
+}
 
 /* Add padding to containers */
 .container
