@@ -79,13 +79,14 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
-
+  /* Ubicacion de los botones */
   .botones{
     display: flex;
     justify-content: end;
     align-items: flex-end;    
   }
 
+  /* Estilo de los botones */
   .estilobotones{
     margin-right: 20px;
     padding: 8px 30px;
@@ -95,11 +96,12 @@
     border-radius: 30px;
     cursor: pointer;
   }
-
+  /* Aspecto de los botones al mover el mouse sobre ellos */
   .estilobotones:hover{
     background-color: rgb(244,67,54);
   }
 
+  /* Efecto de color al momento de presionarlo */
   .estilobotones:active{
     background-color: rgb(197, 60, 60);
   }
