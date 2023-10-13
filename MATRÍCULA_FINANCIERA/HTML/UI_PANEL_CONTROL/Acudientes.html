@@ -4,60 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acudientes</title>
-    <link rel="stylesheet" href="/MATRÍCULA_FINANCIERA/CSS/UI_Panel_Control.css/Acudientes.css">
+    <link rel="stylesheet" href="Acudientes.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="Cont.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     
     <div class="sidebar">
-        <h1>La gran esperanza</h1>
+        <h2><span class="material-symbols-outlined">
+            school
+            </span>La gran esperanza</h2>
 
         <section style="align-items: center;">
-            <button>Panel de control</button>
+            <img src="" alt=""><button class="estilobotonpanel">Panel de control</button>
         </section>
 
-        <section><h6>_______ Opciones</h6></section>
+        <section><h5>_______ Opciones</h5></section>
 
         <nav>
             <ul>
-                <li><a href="/MATRÍCULA_FINANCIERA/HTML/UI_PANEL_CONTROL/Bancos.html">Banco</a></li>
-                <li><a href="/MATRÍCULA_FINANCIERA/HTML/UI_PANEL_CONTROL/Estudiantes.html">Estudiantes</a></li>
-                <li><a href="">Acudientes</a></li>
-                <li><a href="">Matriculas</a></li>
-                <li><a href="">Pagos</a></li>
+                <li ><a href="/MATRÍCULA_FINANCIERA/HTML/UI_PANEL_CONTROL/Bancos.html"> <span class="material-symbols-outlined">
+                    account_balance</span>Banco</a></li>
+                <li><a href="/MATRÍCULA_FINANCIERA/HTML/UI_PANEL_CONTROL/Estudiantes.html"><img src="" alt=""><span class="material-symbols-outlined">
+                    diversity_3
+                    </span>Estudiantes</a></li>
+                <li><a href=""><img src="" alt=""><span class="material-symbols-outlined">
+                    supervisor_account
+                    </span>Acudientes</a></li>
+                <li><a href=""><img src="" alt=""><span class="material-symbols-outlined">
+                    description
+                    </span>Matriculas</a></li>
+                <li><a href=""><img src="" alt=""><span class="material-symbols-outlined">
+                    payments
+                    </span>Pagos</a></li>
             </ul>
         </nav>
     </div>
     
-    <div>
+    <div class="contenedor-global-formulario">
         
-        <div>
-            <h5>Admin 43646 <img src="" alt=""></h5>
+        <div class="barraTop">
+            <h5>Admin 43646 <span class="material-symbols-outlined">
+                account_circle
+                </span></h5>
         </div>
 
-        <div>
+        <div class="estiloContenido">
             <h1>_____Acudientes</h1>
+
+            <div style="padding: 20px;">
+                <span style="color: #fe9801"> <b>Buscar</b><input type="text" placeholder="Buscar"></span>
+            </div>
+
+            <div>
             <table>
                 <tr>
-                    <th></th>
+                    <th><input type="checkbox"></th>
                     <th>id</th>
                     <th>nombre y apellidos</th>
                     <th>celular</th>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td><input type="checkbox"></td>
                     <td>1000802104</td>
                     <td>Sebastian López</td>
                     <td>3131888707</td>
                 </tr>
             </table>
+            </div>
             <hr>
-            <div>
-                <button>Anterior</button>
-                <button>1</button>
-                <button>Siguiente</button>
+
+            <div class="botones" style="padding: 50px;">
+                <button class="estilobotones">Anterior</button>
+                <button class="estilobotones">1</button>
+                <button class="estilobotones">Siguiente</button>
             </div>
         </div>
     </div>
+
 
 </body>
 </html>

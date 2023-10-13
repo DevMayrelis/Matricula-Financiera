@@ -1,0 +1,12 @@
+
+    /* Contenedor que abarca todos los elementos del formulario*/
+    .contenedor-global-formulario{
+        position: static;           
+        margin-left: 305px;    
+        margin-right: 35px;
+        background-color: white;
+
+        /* GRID */
+        display: grid;
+        box-sizing: border-box;
+    }

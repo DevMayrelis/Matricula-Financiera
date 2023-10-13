@@ -1,0 +1,110 @@
+  h1{
+    color: grey;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+  }
+
+  li a {
+    display: block;
+    width: 60px;
+  }
+
+
+  table{
+    width: 100%;
+    text-align: left;
+  }
+
+  tr:hover {background-color: coral;}
+
+  th{
+    
+    border-bottom: 1px solid #ddd;
+    background-color: #fe9801;
+    color: aliceblue;
+  }
+
+  .botones{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;    
+  }
+
+  .botonpanel{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .estilobotonpanel{
+    margin-right: 10px;
+    padding: 8px 30px;
+    background-color: #7a8ef5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .estilobotonpanel:hover{
+    background-color:#7a8ef5;
+  }
+
+  /* Estilo de los botones */
+  .estilobotones{
+    margin-right: 10px;
+    padding: 8px 30px;
+    background-color: #fe9801;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  /* Aspecto de los botones al mover el mouse sobre ellos */
+  .estilobotones:hover{
+    background-color:#fe9801;
+  }
+
+  /* Efecto de color al momento de presionarlo */
+  .estilobotones:active{
+    background-color: #fe6a01;
+  }
+
+
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+  .barraTop{
+    margin: 10px;
+    display: flex;
+    justify-content: right;
+    border-radius: 30px;
+    p.groove {border-style: groove;}
+    border: 1px solid white;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  }
+
+  .estiloContenido{
+    margin: 10px;
+    border-radius: 10px;
+    p.groove {border-style: groove;}
+    border: 1px solid white;
+    height: 350px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
