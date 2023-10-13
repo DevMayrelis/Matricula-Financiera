@@ -12,7 +12,7 @@ tamaño total se mantendrá constante*/
   box-sizing: border-box;
 }
 
-/* Bordered form */
+/* forma bordeada */
 form {
   border: 8px solid #f1f1f1;
 }
@@ -136,7 +136,7 @@ form {
   margin:0;
 }
 
-/* Full-width inputs */
+/* Entradas de ancho completo */
 input[type=text], input[type=contraseña]
  {
   width: 100%;
@@ -168,7 +168,7 @@ button
 .button3 {border-radius: 8px;}
 
 
-/* Add a hover effect for buttons */
+/* Agregar un efecto de desplazamiento para los botones */
 button:hover 
 {
   opacity: 0.8;
@@ -178,12 +178,17 @@ button:hover
 .custom-label {
   color: #ff0000; /* Color de texto */
 }
+
+/*estilo personalizado para la etiqueta h2 Personal Administrativo*/
+.titulo-h2{
+  color: #ff0000; /* Color de texto */
+}
 /*---------------------------------------------------------------------------------*/
 
 /*----------IMAGEN LOGIN--------------*/
  
 .imagen-login {
-  background-image: url('img_Adm/LoginAd.png');
+  background-image: url('imgAd/LoginAd.png');
   background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
   width: 100px; /* Establece el ancho  */
   height: 100px; /* Establece la altura */
@@ -198,18 +203,16 @@ button:hover
   bottom: 0; /* Coloca el footer en la parte inferior de la ventana del navegador */
   left: 0; /* Alinea el footer a la izquierda */
   width: 100%; /* Asegura que el footer ocupe todo el ancho de la página */
-  background-color: #f7f2f2bd; /* Cambia el color de fondo del footer según tus preferencias */
-  color: #fff; /* Cambia el color de texto del footer según tus preferencias */
-  padding: 10px; /* Ajusta el espacio interno del footer según tu preferencia */
+  background-color: #f7f2f2bd; /* Cambia el color de fondo del footer*/
+  color: #fff; /* Cambia el color de texto del footer  */
+  padding: 10px; /* Ajusta el espacio interno del footer */
 }
 
 /* Estilo de la imagen en el footer */
 .footer img {
-  margin: left 0; /* Ajusta el margen izquierdo según tus preferencias */
-  width: 50px; /* Ajusta el ancho de la imagen según tus preferencias */
-  height: auto; /* Mantiene la proporción original de la imagen */
-  vertical-align: middle; /* Alinea verticalmente la imagen en el centro del footer */
+  margin: left 0; /* Se ajusta el margen izquierdo*/
+  width: 50px; /* Se ajusta el ancho de la imagen */
+  height: auto; /* Se mantiene la proporción original de la imagen */
+  vertical-align: middle; /* Se alinea verticalmente la imagen en el centro del footer */
   opacity: 1;
 }
-
-
