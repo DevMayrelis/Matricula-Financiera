@@ -2,8 +2,9 @@
 @import  "./general.css";
 
 /*-------------------------------------  (PREMATRÍCULA)*/
-@import "UI_Prematrícula/prematricula-cont.css";
-@import "UI_Prematrícula/prematricula-sidebar.css";
+@import "UI_Prematrícula_Cliente/form-cont.css";
+@import "UI_Prematrícula_Cliente/form-sidebar.css";
+@import "UI_Prematrícula_Cliente/bienvenida.css";
 
 /*-------------------------------------  (LOGIN CLIENTE)*/
 @import "UI_Login_Cliente/Login.css";
@@ -11,7 +12,7 @@
 /*-------------------------------------  (LOGIN ADMIN)*/
 @import "UI_Login_Admin/Admin.css";
 
-/*-------------------------------------  (PANEL DE CONTROL ADMIN)*/
+/*-------------------------------------  (PANEL DE CONTROL)*/
 @import "UI_Panel_Control_Admin/Acudientes.css";
 @import "UI_Panel_Control_Admin/Cont.css";
 @import "UI_Panel_Control_Admin/sidebar.css";
