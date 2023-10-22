@@ -5,8 +5,11 @@
 @import "UI_Prematrícula/prematricula-cont.css";
 @import "UI_Prematrícula/prematricula-sidebar.css";
 
-/*-------------------------------------  (ADMINISTRADOR O USUARIO)*/
+/*-------------------------------------  (LOGIN CLIENTE)*/
 @import "UI_Login_Cliente/Login.css";
+
+/*-------------------------------------  (LOGIN ADMIN)*/
+@import "UI_Login_Admin/Admin.css";
 
 /*-------------------------------------  (...)*/
 /*-------------------------------------  (...)*/
