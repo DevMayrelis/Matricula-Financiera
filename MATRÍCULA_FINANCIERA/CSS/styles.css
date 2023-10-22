@@ -11,5 +11,10 @@
 /*-------------------------------------  (LOGIN ADMIN)*/
 @import "UI_Login_Admin/Admin.css";
 
+/*-------------------------------------  (PANEL DE CONTROL ADMIN)*/
+@import "UI_Panel_Control/Acudientes.css";
+@import "UI_Panel_Control/Cont.css";
+@import "UI_Panel_Control/sidebar.css";
+
 /*-------------------------------------  (...)*/
 /*-------------------------------------  (...)*/
