@@ -19,75 +19,343 @@ sidebar.
 
 **************************************************************************/
 
-/* DATOS DE LOS ACUDIENTES ---------------------*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                        DATOS DE LOS ACUDIENTES 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
     /* Contenedor que abarca todos los elementos del formulario*/
     .contenedor-global-formulario{
+
+        /*Forma  ·········································*/
+
         position: static;           
         margin-left: 305px;    
         margin-right: 35px;
-        background-color: white;
+        min-width: 300px;
 
-        /* GRID */
-        display: grid;
-        box-sizing: border-box;
+        /*Diseño ·········································*/
+        background-color: white;
     }
 
-    /* Contenedores que contienen los datos de los acudientes*/
-    .datos-padre, .datos-madre{
+    /* Contenedores que contienen los datos*/
+    .datos-acudiente1, .datos-acudiente2{
+
+        /*Forma  ·········································*/
+
         margin-top: -30px;
         margin-bottom: 44px;
 
         /* GRID */
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-column-gap: 25px; /*Espacio entre columnas*/
+    }
+
+    /* Flex del ComboBox con el cajon de texto oculto*/
+    .flex-row-combobox {
+        /*Forma  ·········································*/
+
+        /*FLEX BOX*/
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
     }
 
     /* Modifica el diseño de todos los títulos de las secciones principales
     (Datos de los acudientes, Datos de los estudiantes...)*/
     section h3{ 
+
+        /*Diseño ·········································*/
+
         color:rgb(244, 69, 56);
         text-align: center;
+        margin-bottom: 2rem;
     }
 
-    /*Se modifican todos los títulos de cada una de las secciones secundarias
+    /*Se modifican todos los subtitulos de cada una de las secciones 
     (Padre, Madre...)*/
-    .titulo-seccion{ 
-        color: white;
+    .titulo-seccion{
+        
+        /*Forma  ·········································*/
+
+        padding: 3px;
         text-align: center;
-        background-color: rgb(247, 87, 87);
+
+        /*Esquinas*/
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        padding: 3px;
-        background-image: linear-gradient(to right, #fb5d41 0%, #ff5729 100%);
-        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, 
-                    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, 
-                    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+        /*Diseño ·········································*/
+
+        color: white;
+        background-color: rgb(244, 67, 54);
+        background-image: linear-gradient(to right, #fb5d41 0%, rgb(244, 67, 54) 100%);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
 
-    .recuadro {
-        width: 200px;
-        height: 10px;
-        margin: 20px;
+    /*Menu desplegable para los campos de los acudientes*/
+        .comboBox-acu, .comboBox-acu2{
+
+            /*Forma ·········································*/
+
+            width: 100%;
+            height: 30px;
+            position: relative; /*Asi se evita la interferencia al hacer click sobre el mismo*/
+            border: none; /* Elimina cualquier borde que pueda estar presente */
+            font-size: 16px; /* Cambia el tamaño del texto */
+            outline: none;
+            border-radius: 15px;
+            padding-left: 20px;
+            margin-bottom: 20px;
+
+            /*Diseño ·········································*/
+
+            border-bottom: 3px solid rgb(254, 181, 181); /* Agrega una línea horizontal en la parte inferior */
+            color: rgb(255, 107, 107); /* Cambia el color del texto */
+            background-color: transparent;
+        }
         
-        /* Establece el radio de los bordes para hacerlos redondeados */
-        border-radius: 10px;
+        /* Cambiar el estilo de las opciones desplegables */
+        #comboBox-acu1 option, #comboBox-acu2 option{
 
-        /* Aplica otros estilos de borde, color de fondo y texto */
-        border: 2px solid #333;
-        background-color: #ee7979;
-        padding: 20px;
-        text-align: center;
-        overflow: auto;
+            /*Forma  ·········································*/
 
-        /*Ajusta el tamaño del texto*/
-        font-size: 10px;
+            padding: 5px 10px; /* Cambia el espacio interior de las opciones */
+
+            /*Diseño ·········································*/
+
+            background-color: #333;
+            color: rgb(255, 255, 255); /* Cambia el color del texto de las opciones */
+            box-shadow: rgba(245, 164, 97, 0.097) 0px 13px 27px -5px, 
+                        rgba(0, 0, 0, 0.103) 0px 8px 16px -8px; /*Sombra*/
+        }
+
+        /* Cambiar el estilo cuando se enfoca el combo box */
+        #comboBox-acu1:focus, #comboBox-acu2:focus{
+
+            /*Diseño ·········································*/
+
+            border-color: #ff8989; /* Cambia el color del borde al enfocar */
+        }
+
+        /* Cambiar el estilo cuando el mouse pasa se pasa por encima del elemento */
+        #comboBox-acu1:hover, #comboBox-acu2:hover{
+
+            /*Diseño ·········································*/
+
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        }
+
+    /*Campo texto (otro...) */
+        .campo-texto-otro{
+
+            /*Forma  ·········································*/
+
+            /*Esquinas*/
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            padding-left: 15px; /* Ajusta el espacio a la izquierda del texto ingresado */
+            box-sizing: border-box; /* Con esta regla, el campo no se saldra del contenedor*/
+            position: relative;
+            margin-bottom: 30px;
+            display: none;
+            width: 100%;
+            height: 30px;
+            border: none;
+
+            /*Diseño ·········································*/
+
+            border-bottom: 3px solid rgb(176, 176, 176); /*Color del borde*/
+            
+            /*Acciones  ······································*/
+
+            transition: width 0.8s ease-in-out; /* Agrega una transición a la propiedad width */
+        }
+        
+        .campo-texto-otro:focus {
+
+            /*Diseño ·········································*/
+
+            border-color: rgb(254, 181, 181); /* Cambia el color del borde al hacer clic */
+            box-shadow: rgba(245, 164, 97, 0.097) 0px 13px 27px -5px, 
+                        rgba(0, 0, 0, 0.103) 0px 8px 16px -8px; /*Sombra*/
+            outline: none;
+        }
+
+        #otro-acu1, #otro-acu2{
+            /*Forma  ·········································*/
+            display: none;
+            overflow: hidden; /* Para ocultar el exceso de contenido */
+        }
+
+        
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DATOS DE LOS ESTUDIANTES 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+    /* Aqui va el listado de los estudiantes agregados que se desea matricular*/
+    .seccion-estudiantes-agregados{
+
+        /*Forma  ·········································*/
+
+        /*FLEX BOX*/
+        display: flex;
+        flex-direction: row;
+
+        gap: 25px; /*Espacio entre columnas de los elementos de esta sección*/
+        width: 100%;
+        height: 70px;
+        
+        /* scrollbar- */
+        overflow-x:scroll; /* Habilita la barra de desplazamiento horizontal */
+        overflow-y:hidden; /* Oculta la barra de desplazamiento vertical */
+        scrollbar-width: thin; /* "auto", "thin" o "none" */
+
+        /*Diseño ·········································*/
+
+        /* Color de fondo se la sección*/
+        background-color: transparent;
+
+        /* Color y grosor de la barra de desplazamiento */
+        scrollbar-color: #dbdbdb rgb(240, 240, 240); 
     }
-    
-/* ÍCONOS ---------------------*/
 
-    .icon{
-        color: rgb(244, 67, 54);
-        font-size: 1rem;
+    /*Recuadros que estan dentro de la sección de estudiantes agregados*/
+        .recuadro_estudiante{
+
+            /*Forma  ·········································*/
+            
+            /* Ajusta el tamaño del contenedor interno al contenido de texto */
+            width: auto;
+            height: auto;
+            white-space: nowrap; /* Evita el salto de línea de los elementos internos */
+            overflow-wrap: break-word; /* Rompe el texto en palabras largas */
+            margin-bottom: 0.7rem;
+            padding: 1rem;
+
+            /*FLEX BOX*/
+            display: flex;
+            flex-direction: row;
+            column-gap: 0.7rem;
+
+            /*Esquinas*/
+            border-top-left-radius: 0.8rem;
+            border-top-right-radius: 0.8rem;
+            border: none;
+
+            justify-content: center; /* Centra el contenido verticalmente */
+            align-items: center; /* Centra el contenido horizontalmente */
+
+            /*Diseño ·········································*/
+            
+            background-color: rgb(237, 237, 237);
+            box-shadow: rgba(143, 70, 70, 0.15) 0px 2px 8px;
+            border-bottom: 2px solid rgb(255, 99, 99);
+            
+            /*Acciones  ······································*/
+            
+            transition: background-color 0.3s ease-out; /* Agregar una transición suave para el cambio de color */
+            transition: column-gap 0.8s ease-out; /* Agregar una transición suave... */
+        }
+
+        /*Contenido del recuadro (nombre del estudiante)*/
+        .nombre-estudiante{
+            color: rgb(244, 67, 54);
+        }
+
+        /*Cambiar el color del recuadro, cuando el mouse pasa por encima*/
+        .recuadro_estudiante:hover{
+
+            /*Diseño ·········································*/
+            
+            background-color: rgb(244, 67, 54); 
+            border-bottom: 2px solid rgb(146, 14, 14);
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            column-gap: 0.3rem;
+        }
+
+        /*Cambiar el color de texto del recuadro al pasar el mouse por encima*/
+        .recuadro_estudiante:hover .nombre-estudiante, .recuadro_estudiante:hover .icon-manage-accounts{
+
+            /*Diseño ·········································*/
+
+            color:aliceblue
+        }
+
+        /*Color dle nombre del estudiante*/
+ 
+    /*Línea horizontal separadora*/
+    hr.ln-hor-separadora{
+        
+        /*Diseño ·········································*/
+
+        color:rgba(199, 199, 199, 0.261);
     }
+
+    /**/
+    .flex-estudiante-cont-1{
+
+        /*Forma  ·········································*/
+
+        /*FLEX BOX*/
+        display: flex;
+        flex-direction: row;
+
+        /*Diseño ·········································*/
+    }
+
+    .flex-foto-estudiante{
+        
+        /*Forma  ·········································*/
+
+        /*FLEX BOX*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Centra el contenido verticalmente */
+        align-items: center; /* Centra el contenido horizontalmente */
+        /* controla la proporción de espacio que un elemento 
+        flexible toma en relación con otros elementos 
+        flexibles dentro del mismo contenedor*/
+        flex:1;
+
+        margin-right: 25px;
+        box-sizing: border-box;
+        border-radius: 1rem;
+
+        /*Diseño ·········································*/
+
+        background-color: #ffffff;
+        opacity: 1;
+        background-image:  linear-gradient(135deg, #ffcfd9 25%, transparent 25%), linear-gradient(225deg, #ffcfd9 25%, transparent 25%), linear-gradient(45deg, #ffcfd9 25%, transparent 25%), linear-gradient(315deg, #ffcfd9 25%, #ffffff 25%);
+        background-position:  12px 0, 12px 0, 0 0, 0 0;
+        background-size: 24px 24px;
+        background-repeat: repeat;
+        border: 1px solid rgb(255, 54, 54); /*Color del borde*/
+    }
+
+    .grid-estudiante-cont-1{
+
+        /*Forma  ·········································*/
+
+        /* GRID */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        grid-column-gap: 25px; /*Espacio entre columnas*/
+        /* controla la proporción de espacio que un elemento 
+        flexible toma en relación con otros elementos 
+        flexibles dentro del mismo contenedor*/
+        flex:2;
+    }
+
+    /* ÍCONOS */
+        .icon-manage-accounts{
+            color: rgb(244, 67, 54);
+            font-size: 2rem;
+        }
+
+        .icon-edit{
+            color: rgb(244, 67, 54);
+            font-size: 1.5rem;
+        }
