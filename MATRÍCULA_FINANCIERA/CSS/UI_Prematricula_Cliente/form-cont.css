@@ -19,24 +19,320 @@ sidebar.
 
 **************************************************************************/
 
+body{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    overflow-x:hidden; /* Oculta la barra de desplazamiento horizontal */
+}
+
+/* Barra de desplazamiento */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 105, 105) #f4f4f4;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                             Formulario
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*Titulos principales del formulario*/
+.titulo-principal-cont{
+
+    /*Forma  ·········································*/
+
+    width: 100%;
+    height: max-content;
+    position: relative;
+    margin-bottom: 90px;
+    margin-top: 29px;
+
+    /* background: #333; */
+}
+
+.titulo-principal-cont img{
+
+    /*Forma  ·········································*/
+
+    position: absolute;
+    top: -1px;
+    left: 70%;
+    z-index: 2;
+
+    /*Acciones  ······································*/
+
+    animation: titulo-principal-cont-img 1.2s ease-in-out forwards;
+}
+
+.titulo-principal-recuadro-fondo{
+    
+    /*Forma  ·········································*/
+
+    width: 149%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: -36px;
+    z-index: 1;
+    display: none;
+
+    /*Diseño ·········································*/
+
+    background-color: rgb(70, 81, 138);
+}
+
+.titulo-principal-recuadro1{
+
+    /*Forma  ·········································*/
+
+    height: 74px;
+    border-radius: 19px;
+    z-index: 2;
+    position: relative;
+
+    /*Diseño ·········································*/
+
+    background-color: rgb(70, 81, 138);
+}
+
+.titulo-principal-recuadro1 h3{
+    
+    /*Forma  ·········································*/
+
+    line-height: 3;
+    margin-top: 0px;
+    z-index: 2;
+    font-size: 23px;
+
+    /*Diseño ·········································*/
+
+    color: #ffffff;
+}
+
+.titulo-principal-recuadro1 div{
+    /*Forma  ·········································*/
+    
+    border-radius: 19px;
+    position: absolute;
+    width: 13px;
+    height: 48px;
+    left: 10px;
+    top: 10px;
+    
+    /*Diseño ·········································*/
+    
+    background-color: azure;
+}
+
+.titulo-principal-recuadro2{
+
+    /*Forma  ·········································*/
+
+    width: 70%;
+    height: 35px;
+    border-bottom-left-radius: 22px;
+    margin-left: 57px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
+
+    /*Diseño ·········································*/
+
+    background-color: rgb(247, 87, 87);
+}
+
+.titulo-principal-recuadro2 h4{
+
+    /*Forma  ·········································*/
+
+    position: absolute;
+    left: 49px;
+    top: -18px;
+
+    /*Diseño ·········································*/
+
+    color: #ffffff;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                '*'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+    /*Contenedor que abarca todo el contenido de la página (body)*/
+    .cont-padre{
+
+        /*Forma  ·········································*/
+
+        /*FLEX BOX*/
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Contenedor que abarca todos los elementos que componen el 
+    fondo y título de la página*/
+    .contenedor-1{
+
+        /*Forma  ·········································*/
+
+        position: relative;
+        height: 269px; 
+        margin-bottom: 10px;
+
+        /*Acciones  ······································*/
+
+        animation: contenedor-1-entrada 2s ease-in-out forwards;
+    }
+
+    .contenedor-1-titulo{
+
+        /*Forma  ·········································*/
+
+        position: absolute;
+        top: 41px;
+        left: 53%;
+
+        /*Diseño ·········································*/
+
+        color: white;
+    }
+
+    /*Recuadro superior del contenedor-1*/
+    .contenedor-1-contenedor-sup{
+
+        /*Forma  ·········································*/
+
+        height: 72%;
+
+        /*Diseño ·········································*/
+
+        /* background-color: aqua; */
+        background-color: rgb(244, 67, 54); 
+    }
+
+    /*Recuadro inferior del contenedor-1*/
+    .contenedor-1-contenedor-inf{
+
+        /*Forma  ·········································*/
+
+        height: 28%;
+
+        /*Diseño ·········································*/
+
+        /* background-color: rgb(64, 70, 70); */
+        background-color: rgb(255, 255, 255);
+    }
+
+    /*Contenedor que contiene la imágen del contenedor-1*/
+    .contenedor-1-img-contenedor{
+                
+        /*Forma  ·········································*/
+        
+        position: absolute;
+        top: 58%; /* Posición vertical en el centro */
+        left: 50%; /* Posición horizontal en el centro */
+        transform: translate(-50%, -48%); /* Ajusta el centro de la imagen */
+        z-index: 1;
+
+        /*Acciones  ······································*/
+
+        animation: contenedor-1-img-contenedor-entrada 1.5s ease-in-out forwards;
+    }
+
+    /*Atributos de la Imagen del contenedor anterior*/
+    .contenedor-1-img-contenedor img{
+                
+        /*Forma  ·········································*/
+
+        width: 396px;
+        height: auto;
+    }
+
+    /*Circulo blanco detrás de la imágen anterior*/
+    .contenedor-1-circulo-contenedor{
+        
+        /*Forma  ·········································*/
+        
+        position: absolute;
+        top: 50%; /* Posición vertical en el centro */
+        left: 50%; /* Posición horizontal en el centro */
+        transform: translate(-140%, -32%); /* Ajusta el centro del elemento */
+        width: 150px;
+        height: 150px;
+        border-radius: 5rem;
+        z-index: 1;
+
+
+        /*Diseño ·········································*/
+
+        background-color: rgb(255, 255, 255);
+
+        /*Acciones  ······································*/
+        
+        transition: width 0.5s, height 0.5s, translate 0.5s;
+    }
+
+    .contenedor-1-menu{
+      
+        /*Forma  ·········································*/
+
+        position: absolute;
+        top: 29%;
+        left: 78%;
+        width: 150px;
+        height: 156px;
+        box-sizing: conte;
+        border-radius: 10px;
+        z-index: 0;
+
+        /*FLEX BOX*/
+        display: flex;
+        flex-direction: column;
+
+        /*Diseño ·········································*/
+
+        background-color: rgb(255, 111, 101);
+    }
+
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                         DATOS DE LOS ACUDIENTES 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-    /* Contenedor que abarca todos los elementos del formulario*/
-    .contenedor-global-formulario{
+    .contenedor-2{
 
         /*Forma  ·········································*/
 
-        position: static;           
-        margin-left: 305px;    
-        margin-right: 35px;
-        min-width: 300px;
-
-        /*Diseño ·········································*/
-        background-color: white;
+        /*FLEX BOX*/
+        display: flex;
+        flex-direction: row;
     }
+
+    /* Contenedor que abarca todos los elementos del formulario*/
+        /*Propiedades cuando no se fija el sidebar*/
+        .contenedor-global-formulario{
+
+            /*Forma  ·········································*/
+
+            position: static;           
+            margin-left: 62px;    
+            margin-right: 35px;
+            min-width: 300px;
+            flex:1;
+
+            /*Diseño ·········································*/
+            
+            background-color: white;
+        }
+
+         /*Propiedades cuando se fija el sidebar 1*/
+        .contenedor-global-formulario.fix{
+
+            /*Forma  ·········································*/
+
+            margin-left: 242px;      
+        }
 
     /* Contenedores que contienen los datos*/
     .datos-acudiente1, .datos-acudiente2{
@@ -79,18 +375,17 @@ sidebar.
         
         /*Forma  ·········································*/
 
-        padding: 3px;
+        padding: 2.5px;
         text-align: center;
+        width: 200px;
 
         /*Esquinas*/
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        border-radius: 15px;
 
         /*Diseño ·········································*/
 
         color: white;
-        background-color: rgb(244, 67, 54);
-        background-image: linear-gradient(to right, #fb5d41 0%, rgb(244, 67, 54) 100%);
+        background-image: linear-gradient(to right, rgb(247, 87, 87) 0%, rgb(247, 87, 87) 100%);
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
 
@@ -190,7 +485,9 @@ sidebar.
             overflow: hidden; /* Para ocultar el exceso de contenido */
         }
 
+
         
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 DATOS DE LOS ESTUDIANTES 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -256,8 +553,7 @@ DATOS DE LOS ESTUDIANTES
             
             /*Acciones  ······································*/
             
-            transition: background-color 0.3s ease-out; /* Agregar una transición suave para el cambio de color */
-            transition: column-gap 0.8s ease-out; /* Agregar una transición suave... */
+            transition: column-gap 0.8s cubic-bezier(0,1.3,.58,1); /* Agregar una transición suave... */
         }
 
         /*Contenido del recuadro (nombre del estudiante)*/
@@ -283,8 +579,6 @@ DATOS DE LOS ESTUDIANTES
 
             color:aliceblue
         }
-
-        /*Color dle nombre del estudiante*/
  
     /*Línea horizontal separadora*/
     hr.ln-hor-separadora{
@@ -302,6 +596,7 @@ DATOS DE LOS ESTUDIANTES
         /*FLEX BOX*/
         display: flex;
         flex-direction: row;
+        gap: 25px;
 
         /*Diseño ·········································*/
     }
@@ -320,7 +615,7 @@ DATOS DE LOS ESTUDIANTES
         flexibles dentro del mismo contenedor*/
         flex:1;
 
-        margin-right: 25px;
+        /* margin-right: 25px; */
         box-sizing: border-box;
         border-radius: 1rem;
 
@@ -346,10 +641,10 @@ DATOS DE LOS ESTUDIANTES
         /* controla la proporción de espacio que un elemento 
         flexible toma en relación con otros elementos 
         flexibles dentro del mismo contenedor*/
-        flex:2;
+        flex:2;  
     }
 
-    /* ÍCONOS */
+    /* Íconos */
         .icon-manage-accounts{
             color: rgb(244, 67, 54);
             font-size: 2rem;
@@ -359,3 +654,194 @@ DATOS DE LOS ESTUDIANTES
             color: rgb(244, 67, 54);
             font-size: 1.5rem;
         }
+
+
+
+
+
+
+/* -----------------------------------------------------------------
+                    ANIMACIONES PERSONALIZADAS
+--------------------------------------------------------------------*/ 
+@keyframes contenedor-1-entrada {
+    0% {
+        height: 164px;
+    }
+    100% {
+        height: 269px;
+    }
+}
+
+@keyframes contenedor-1-img-contenedor-entrada {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* -----------------------------------------------------------------
+                            RESPONSIVE
+--------------------------------------------------------------------*/ 
+/*
+Querys (@media)
+********************************************************************
+Con esto podemos especificarle a la página, como queremos 
+que se vean ciertos elementos, bajo ciertas resoluciones o 
+tamaño de la ventana
+*******************************************************************/     
+
+/*  ......................................... 
+        Pantalla menor de 900 pixeles 
+......................................... */
+
+    @media (max-width: 900px) { 
+
+        .contenedor-1-img-contenedor img{
+                
+            /*Forma  ·········································*/
+
+            width: 320px;
+        }
+
+        /*Circulo blanco detrás de la imágen de fondo del contenedor-1*/
+        .contenedor-1-circulo-contenedor{
+            
+            /*Forma  ·········································*/
+            
+            top: 50%; /* Posición vertical en el centro */
+            left: 50%; /* Posición horizontal en el centro */
+            transform: translate(-140%, -30%); /* Ajusta el centro del elemento */
+            width: 120px;
+            height: 120px;
+        }
+
+        .contenedor-1-menu{
+      
+            /*Forma  ·········································*/
+    
+            top: 16%;
+            left: 6%;
+            width: 87%;
+            height: 91px;
+
+            /*FLEX BOX*/
+            display: flex;
+            flex-direction: row;
+        }
+
+        /*Margen izquierdo del contenedor cuando el sidebar 1 no fijado*/
+        .contenedor-global-formulario{
+            
+            /*Forma  ·········································*/
+
+            margin-left: 35px;      
+        }
+    }
+/*  ......................................... 
+        Pantalla menor de 800 pixeles 
+......................................... */
+
+    @media (max-width: 800px) { 
+
+        .flex-estudiante-cont-1 {
+            
+            /*Forma  ·········································*/
+            
+            /*Se cambia la dirección de este flex en columnas */
+            flex-direction: column;
+            gap: 0px;
+        }
+    }
+/*  ......................................... 
+        Pantalla menor de 600 pixeles 
+......................................... */
+
+    @media (max-width: 600px) { 
+
+        .contenedor-1-img-contenedor img{
+                        
+            /*Forma  ·········································*/
+
+            width: 280px;
+        }
+
+        /*Circulo blanco detrás de la imágen de fondo del contenedor-1*/
+        .contenedor-1-circulo-contenedor{
+    
+            /*Forma  ·········································*/
+            
+            top: 50%; /* Posición vertical en el centro */
+            left: 50%; /* Posición horizontal en el centro */
+            transform: translate(-140%, -24%); /* Ajusta el centro del elemento */
+            width: 112px;
+            height: 112px;
+        }
+
+        /**/
+        .titulo-principal-cont{
+
+            /*Forma  ·········································*/
+
+            margin-bottom: 267px;
+        }
+
+        /**/
+        .titulo-principal-cont img{
+            /*Forma  ·········································*/
+
+            top: 93px;
+            left: -50px;
+            width: 230px;
+        }
+
+        /**/
+        .titulo-principal-recuadro-fondo{
+            
+            /*Forma  ·········································*/
+
+            top: -70px;
+            display: block; 
+            height: 310px;
+        }
+
+        /**/
+        .titulo-principal-recuadro1 h3 {
+            
+            /*Forma  ·········································*/
+
+            font-size: 34px;
+            max-width: 78%;
+            line-height: 35.2px;
+            top: 25px;
+            position: relative;
+            left: 14%;
+        }
+
+        .titulo-principal-recuadro1 div {
+
+            /*Forma  ·········································*/
+
+            display: none;
+        }
+
+        .titulo-principal-recuadro2{
+
+            /*Forma  ·········································*/
+
+            top: 56px;
+            left: 24%;
+            width: 204%;
+            border-radius: 22px;
+        }
+
+        .titulo-principal-recuadro2 h4{
+
+            /*Forma  ·········································*/
+
+            left: 3%;
+            max-width: 23%;
+            line-height: 13px;
+        }
+    }
