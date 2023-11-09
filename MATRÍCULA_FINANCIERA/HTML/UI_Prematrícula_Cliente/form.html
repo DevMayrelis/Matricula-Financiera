@@ -16,11 +16,15 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />        
         <link rel="stylesheet" href="/MATRÍCULA_FINANCIERA\CSS\UI_Prematricula_Cliente\form-cont.css"> 
         <link rel="stylesheet" href="/MATRÍCULA_FINANCIERA\CSS\UI_Prematricula_Cliente\form-sidebar.css"> 
+        <link rel="stylesheet" href="/MATRÍCULA_FINANCIERA\CSS\UI_Prematricula_Cliente\form-sidebar2.css"> 
         <link rel="stylesheet" href="/MATRÍCULA_FINANCIERA\CSS\general.css"> 
 
         <!--Scripts-->
         <script src="scripts.js"></script>
         <script src="sidebar-actions.js"></script>
+        <script src="sidebar2-actions.js"></script>
+        <script src="secciones.js"></script>
+        <script src="viewPortScroll.js"></script>
     <head>
 
     <!--____________________________________________________________________________
@@ -28,291 +32,453 @@
     ______________________________________________________________________________-->
     <!------------------ Contenido de la página -------------------->
     <body>
+        <div class="cont-padre">
 
-        <!--=================================================
-        Sidebar 
-        ==================================================-->
-        <div class="sidebar">
-            <!--Título del menú-->
-            <center>
-                <h2>Prematrícula</h2>
-            </center>
+            <!-- Contenedor 1 (flex) -->
+            <div class="contenedor-1">
+                <!--=================================================
+                Fondo del título de la página 
+                ==================================================-->
 
-            <!--Menú-->
-            <section class="contenedor_global_sidebar">
-                 <!--Items del menú-->
-                <div class="fila"> <!--Fila 1-->
-                    <div class="circulo"></div> 
-                    <h5>Datos de los acudientes</h5>
+                <!-- Contenedor superior -->
+                <div class="contenedor-1-contenedor-sup">
+                    <!-- Circulo detras de la imágen -->
+                    <div class="contenedor-1-circulo-contenedor"></div>  
                 </div>
-                <div class="fila"> <!--Fila 2-->
-                    <div class="circulo"></div> 
-                    <h5>Datos de los estudiantes</h5>
-                </div>
-                <div class="fila"> <!--Fila 3-->
-                    <div class="circulo"></div> 
-                    <h5>Finalización</h5>
-                </div>
-            </section>
-        </div>
 
-
-        <!--=================================================
-        Formulario 
-        ==================================================-->
-        <div class="contenedor-global-formulario">
-            <form action="" class="formulario_registro">
+                <!-- Contenedor inferior -->
+                <div class="contenedor-1-contenedor-inf"></div>
                 
-                <!--*************************  Sección (datos de los acudientes)  *************************-->
-                <section class="datos-acudientes-cont" id="datos-acudientes-cont">
+                <!-- Contenedor del medio (imágen) -->
+                <div class="contenedor-1-img-contenedor">
+                    <!-- imagen -->
+                    <img src="/MATRÍCULA_FINANCIERA\CSS\UI_Prematricula_Cliente\img\Fondo-pagina.png" 
+                         alt="imagen-fondo"">
+                </div>
 
-                    <h3>Datos de los acudientes</h3>
+                <!-- menú de opciones (salir / guardar y salir) -->
+                <div class="contenedor-1-menu">
+                    <div class="contenedor-1-menu-item">
+                        <!-- Imágen de la opción -->
+                        <span class="material-symbols-outlined icon-exit-to-app">exit_to_app</span>
 
-                    <!-- Datos del acudiente 1 -->
-                    <h4 class="titulo-seccion">Acudiente 1 </h4>
-                    <div class="flex-row-combobox">
-                        <select id="comboBox-acu1" name="comboBox-acu1" class="comboBox-acu">
-                        <option value="Madre">Madre</option>
-                        <option value="Padre">Padre</option>
-                        <option value="Hermano(a)">Hermano(a)</option>
-                        <option value="Abuelo(a)">Abuelo(a)</option>
-                        <option value="Tío(a">Tío(a)</option>
-                        <option value="Primo(a)">Primo(a)</option>
-                        <option value="Otro(a)">Otro(a)</option>
-                        </select>
-                        <input type="text" name="otro-acu1" id="otro-acu1" placeholder="Cual?" class="campo-texto-otro">
+                        <!-- Titulo de la opción -->
+                        <div class="contenedor-1-menu-item-titulo"><h4>Titulo</h4></div>         
+                    </div>
+                </div>
+
+                <div class="contenedor-1-titulo">
+                    <h2>Prematrícula <br>Estudiantes</h2>
+                </div>
+            </div>
+
+            <!-- Contenedor intermedio o sidebar2(flex) -->
+            <div class="sidebar2" id="sidebar2">
+                <!--=================================================
+                Contenedores del sidebar 2 (Dispositivos Móviles) (flex)
+                ==================================================-->
+
+                <!-- Opciones del menu -->
+                <div class="sidebar2-cont-item-flex" id="sidebar-menu-op1" >
+                    <a onclick="mostrarSeccion('datos-acudientes-cont')">
+                        <div class="sidebar2-item-shape-flex"> <center>1</center></div>
+                        <span><h4>Datos de los <br> acudientes</h4></span>
+                    </a>
+                </div>
+
+                <div class="sidebar2-cont-item-flex" id="sidebar-menu-op2" >
+                    <a onclick="mostrarSeccion('datosEstudiantes-cont')">
+                        <div class="sidebar2-item-shape-flex"> <center>2</center></div>
+                        <span><h4>Datos de los <br> estudiantes</h4></span>
+                    </a>
+                </div>
+
+                <div class="sidebar2-cont-item-flex" id="sidebar-menu-op3" >
+                    <a onclick="mostrarSeccion('datosMatricula-cont')">
+                        <div class="sidebar2-item-shape-flex"> <center>3</center></div>
+                        <span><h4>Datos de la <br> institución</h4></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contenedor 2 (flex) -->
+            <div class="contenedor-2">
+                <!--=================================================
+                Sidebar 1 (Escritorio)
+                ==================================================-->
+                <div class="sidebar" id="sidebar1">
+                    <!--Logo -------------------------------->
+                    <div class="sidebar-logo">
+                        <!-- imagen -->
+                        <img src="/MATRÍCULA_FINANCIERA\IMÁGENES\Ruta_Absoluta\SmartTuit-blanco.png" alt="Logo plataforma"
+                                    width="110px">
                     </div>
 
-                    <section class="datos-acudiente1">
-                        <div class = "bloque-campo-texto">
-                            <label for="nombre1_acu1" class="titulo-campo-texto">
-                                <p>Primer nombre</p>
-                                <input type="text" name="nombre1_acu1" id="nombre1_acu1" placeholder="Ingresa tu primer nombre" class="campo-texto">
-                            </label>
+                    <!--Contenedor de al frente (menú) ------------------------------->
+                    <div class="sidebar-menu-cont">
+                        <!-- imagen -->
+                        <center>
+                            <img src="/MATRÍCULA_FINANCIERA\CSS\UI_Prematricula_Cliente\img\Portapapeles.png" alt="Computador"
+                                        width="73px">
+                        </center>
+
+                        <!-- Titulo del menu -->
+                        <div class="sidebar-menu-titulo-flex">
+                            <span class="material-symbols-outlined icon-personal-bag">personal_bag</span>
+                            <h4>Preregistro</h4>
                         </div>
 
-                        <div class = "bloque-campo-texto">
-                            <label for="nombre2_acu1" class="titulo-campo-texto">
-                                <p>Segundo nombre</p>
-                                <input type="text" name="nombre2_acu1" id="nombre2_acu1" placeholder="Ingresa tu segundo nombre" class="campo-texto">
-                            </label>
+                        <!-- Opciones del menu (heredado del sidebar 2)-->
+                        <div class="sidebar2-cont-item-flex" id="sidebar-menu-op1" >
+                            <a onclick="mostrarSeccion('datos-acudientes-cont')">
+                                <div class="sidebar2-item-shape-flex"> <center>1</center></div>
+                                <span><h4>Datos de los <br> acudientes</h4></span>
+                            </a>
                         </div>
 
-                        <div class = "bloque-campo-texto">
-                            <label for="apellido1_acu1" class="titulo-campo-texto">
-                                <p>Primer apellido</p>
-                                <input type="text" name="apellido1_acu1" id="apellido1_acu1" placeholder="Ingresa tu primer apellido" class="campo-texto">
-                            </label>
-                        </div>
-                        
-                        <div class = "bloque-campo-texto">
-                            <label for="apellido2_acu1" class="titulo-campo-texto">
-                                <p>Segundo apellido</p>
-                                <input type="text" name="apellido2_acu1" id="apellido2_acu1" placeholder="Ingresa tu segundo apellido" class="campo-texto">
-                            </label>
+                        <div class="sidebar2-cont-item-flex" id="sidebar-menu-op2" >
+                            <a onclick="mostrarSeccion('datosEstudiantes-cont')">
+                                <div class="sidebar2-item-shape-flex"> <center>2</center></div>
+                                <span><h4>Datos de los <br> estudiantes</h4></span>
+                            </a>
                         </div>
 
-                        <div class = "bloque-campo-texto">
-                            <label for="DNI_acu1" class="titulo-campo-texto">
-                                <p>Identificación</p>
-                                <input type="text" name="DNI_acu1" id="DNI_acu1" placeholder="Ingresa tu DNI" class="campo-texto">
-                            </label>
+                        <div class="sidebar2-cont-item-flex" id="sidebar-menu-op3" >
+                            <a onclick="mostrarSeccion('datosMatricula-cont')">
+                                <div class="sidebar2-item-shape-flex"> <center>3</center></div>
+                                <span><h4>Datos de la <br> institución</h4></span>
+                            </a>
                         </div>
-
-                        <div class = "bloque-campo-texto">
-                            <label for="Ocupacion_acu1" class="titulo-campo-texto">
-                                <p>Ocupación</p>
-                                <input type="text" name="ocupacion_acu1" id="ocupacion_acu1" placeholder="Ingresa tu ocupación" class="campo-texto">
-                            </label>
-                        </div>
-                    </section>
-
-                    <!-- Datos del acudiente 2 -->
-                    <h4 class="titulo-seccion">Acudiente 2</h4>
-                    <div class="flex-row-combobox">
-                        <select id="comboBox-acu2" name="comboBox-acu2" class="comboBox-acu2">
-                            <option value="Madre">Madre</option>
-                            <option value="Padre">Padre</option>
-                            <option value="Hermano(a)">Hermano(a)</option>
-                            <option value="Abuelo(a)">Abuelo(a)</option>
-                            <option value="Tío(a">Tío(a)</option>
-                            <option value="Primo(a)">Primo(a)</option>
-                            <option value="Otro(a)">Otro(a)</option>
-                        </select>
-                        <input type="text" name="otro-acu2" id="otro-acu2" placeholder="Cual?" class="campo-texto-otro">
                     </div>
-
-                    <section class="datos-acudiente2">
-                        <div class = "bloque-campo-texto">
-                            <label for="nombre1_madre" class="titulo-campo-texto">
-                                <p>Primer nombre</p>
-                                <input type="text" name="nombre1_madre" id="nombre1_madre" placeholder="Ingresa tu primer nombre" class="campo-texto">
-                            </label>
-                        </div>
-
-                        <div class = "bloque-campo-texto">
-                            <label for="nombre2_madre" class="titulo-campo-texto">
-                                <p>Segundo nombre</p>
-                                <input type="text" name="nombre2_madre" id="nombre2_madre" placeholder="Ingresa tu segundo nombre" class="campo-texto">
-                            </label>
-                        </div>
-
-                        <div class = "bloque-campo-texto">
-                            <label for="apellido1_madre" class="titulo-campo-texto">
-                                <p>Primer apellido</p>
-                                <input type="text" name="apellido1_madre" id="apellido1_madre" placeholder="Ingresa tu primer apellido" class="campo-texto">
-                            </label>
-                        </div>
-
-                        <div class = "bloque-campo-texto">
-                            <label for="apellido2_madre" class="titulo-campo-texto">
-                                <p>Segundo apellido</p>
-                                <input type="text" name="apellido2_madre" id="apellido2_madre" placeholder="Ingresa tu segundo apellido" class="campo-texto">
-                            </label>
-                        </div>
-
-                        <div class = "bloque-campo-texto">
-                            <label for="DNI_madre" class="titulo-campo-texto">
-                                <p>Identificación</p>
-                                <input type="text" name="DNI_madre" id="DNI_madre" placeholder="Ingresa tu DNI" class="campo-texto">
-                            </label>
-                        </div>
-
-                        <div class = "bloque-campo-texto">
-                            <label for="Ocupacion_madre" class="titulo-campo-texto">
-                                <p>Ocupación</p>
-                                <input type="text" name="ocupacion_madre" id="ocupacion_madre" placeholder="Ingresa tu ocupación" class="campo-texto">
-                            </label>
-                        </div>
-                    </section>
-                    
-                </section>
+                </div>
 
 
-                <!--*************************  Sección (datos del estudiante)  *************************-->
-                <section class="datosEstudiantes-cont" id="datosEstudiantes-cont">
-                    
-                    <h3>Datos de los estudiantes</h3>
-
-                    <!-- Lista o sección de los estudiantes agregados-->
-                    <section class="seccion-estudiantes-agregados">
-
-                        <!-- Recuadros con los nombres de cada estudiante registrado.
-                        Estos deben generarse automaticamente dentro de este mismo
-                        contenedor, cada vez que el usuario agrega un estudiante-->
-
-                        <!-- Modelo de referencia -->
-                        <div class="recuadro_estudiante">
-                            <span class="material-symbols-outlined icon-manage-accounts">manage_accounts</span>
-                            <h5 class="nombre-estudiante">Estudiante 1</h5>
-                            <!--Lapiz (debe aparecer cuando se clikee en este recuadro)-->
-                            <!-- <span class="material-symbols-outlined icon-edit">edit</span> -->
-                        </div>  
-
-                        <div class="recuadro_estudiante">
-                            <span class="material-symbols-outlined icon-manage-accounts">manage_accounts</span>
-                            <h5 class="nombre-estudiante">Milena Galindo</h5>
-                            <!--Lapiz (debe aparecer cuando se clikee en este recuadro)-->
-                            <!-- <span class="material-symbols-outlined icon-edit">edit</span> -->
-                        </div>  
-
-                        <div class="recuadro_estudiante">
-                            <span class="material-symbols-outlined icon-manage-accounts">manage_accounts</span>
-                            <h5 class="nombre-estudiante">Camilo Galindo</h5>
-                            <!--Lapiz (debe aparecer cuando se clikee en este recuadro)-->
-                            <!-- <span class="material-symbols-outlined icon-edit">edit</span> -->
-                        </div>  
-
-                        <div class="recuadro_estudiante">
-                            <span class="material-symbols-outlined icon-manage-accounts">manage_accounts</span>
-                            <h5 class="nombre-estudiante">Maylen Possu</h5>
-                            <!--Lapiz (debe aparecer cuando se clikee en este recuadro)-->
-                            <!-- <span class="material-symbols-outlined icon-edit">edit</span> -->
-                        </div>  
-                    </section>
-
-                    <hr class="ln-hor-separadora">
-
-                    <h4>Datos de ...</h4>
-
-                    <!----------------------------------------------------------------------------
-                        Datos personales del estudiante - CONTENEDOR #1  
-                    ---------------------------------------------------------------------------->
-                    <div class="estudiante-cont-1">
+                <!--=================================================
+                Formulario 
+                ==================================================-->
+                <div class="contenedor-global-formulario">
+                    <form action="" class="formulario_registro">
                         
-                        <!-- Titulo contenedor -->
-                        <h4 class="titulo-seccion">Datos personales</h4>
-                        
-                        <!-- flex horizontal para la primera parte del contenedor -->
-                        <div class="flex-estudiante-cont-1">
-                            <div class="flex-foto-estudiante">
-                                <!-- foto del estudiante -->
-                                <img src="https://img.freepik.com/fotos-premium/feliz-emocionada-retrato-mujer-estudio-exito-confianza-liderazgo-sonrisa-felicidad-mentalidad-disenadora-creativa-africana-joven-profesional-aislada-fondo-gris_590464-213015.jpg"
-                                          width="200px">
+                        <!--*************************  Sección (datos de los acudientes)  *************************-->
+                        <section class="datos-acudientes-cont seccion" id="datos-acudientes-cont">
+
+                            <!-- Titulo principal -->
+                            <div class="titulo-principal-cont">
+
+                                <div class="titulo-principal-recuadro1">
+                                    <!-- Titulo de la sección principal -->
+                                    <h3>Datos de los acudientes</h3>
+
+                                    <!-- linea vertical -->
+                                    <div></div>
+                                </div>
+
+                                <div class="titulo-principal-recuadro2">
+                                    <!-- Elementos -->
+                                    <h4>Los campos (*) son obligatorios</h4>
+                                </div>
+
+                                <!-- imagen -->
+                                <img src="/MATRÍCULA_FINANCIERA\CSS\UI_Prematricula_Cliente\img\Encuesta.png" alt="Encuesta"
+                                width="188px">
+
+                                <!-- Recuadro de alfondo (Se vera en vista movil) -->
+                                <div class="titulo-principal-recuadro-fondo"></div>
                             </div>
 
-                            <div class="grid-estudiante-cont-1">
-                                <!-- Campos de texto -->
+                            <!-- Datos del acudiente 1 -->
+                            <h4 class="titulo-seccion">Acudiente 1 </h4>
+                            <div class="flex-row-combobox">
+                                <select id="comboBox-acu1" name="comboBox-acu1" class="comboBox-acu">
+                                <option value="Madre">Madre</option>
+                                <option value="Padre">Padre</option>
+                                <option value="Hermano(a)">Hermano(a)</option>
+                                <option value="Abuelo(a)">Abuelo(a)</option>
+                                <option value="Tío(a">Tío(a)</option>
+                                <option value="Primo(a)">Primo(a)</option>
+                                <option value="Otro(a)">Otro(a)</option>
+                                </select>
+                                <input type="text" name="otro-acu1" id="otro-acu1" placeholder="Cual?" class="campo-texto-otro">
+                            </div>
+
+                            <section class="datos-acudiente1">
                                 <div class = "bloque-campo-texto">
-                                    <label for="nombre1_est" class="titulo-campo-texto">
+                                    <label for="nombre1_acu1" class="titulo-campo-texto">
                                         <p>Primer nombre</p>
-                                        <input type="text" name="nombre1_est" id="nombre1_est" placeholder="Ingresa tu primer nombre" class="campo-texto">
+                                        <input type="text" name="nombre1_acu1" id="nombre1_acu1" placeholder="Ingresa tu primer nombre" class="campo-texto">
                                     </label>
-                                </div>   
+                                </div>
 
                                 <div class = "bloque-campo-texto">
-                                    <label for="nombre2_est" class="titulo-campo-texto">
+                                    <label for="nombre2_acu1" class="titulo-campo-texto">
                                         <p>Segundo nombre</p>
-                                        <input type="text" name="nombre2_est" id="nombre2_est" placeholder="Ingresa tu segundo nombre" class="campo-texto">
+                                        <input type="text" name="nombre2_acu1" id="nombre2_acu1" placeholder="Ingresa tu segundo nombre" class="campo-texto">
                                     </label>
-                                </div>       
+                                </div>
 
                                 <div class = "bloque-campo-texto">
-                                    <label for="apellido1_est" class="titulo-campo-texto">
+                                    <label for="apellido1_acu1" class="titulo-campo-texto">
                                         <p>Primer apellido</p>
-                                        <input type="text" name="apellido1_est" id="apellido1_est" placeholder="Ingresa tu primer apellido" class="campo-texto">
+                                        <input type="text" name="apellido1_acu1" id="apellido1_acu1" placeholder="Ingresa tu primer apellido" class="campo-texto">
                                     </label>
                                 </div>
                                 
                                 <div class = "bloque-campo-texto">
-                                    <label for="apellido2_est" class="titulo-campo-texto">
+                                    <label for="apellido2_acu1" class="titulo-campo-texto">
                                         <p>Segundo apellido</p>
-                                        <input type="text" name="apellido2_est" id="apellido2_est" placeholder="Ingresa tu segundo apellido" class="campo-texto">
+                                        <input type="text" name="apellido2_acu1" id="apellido2_acu1" placeholder="Ingresa tu segundo apellido" class="campo-texto">
                                     </label>
-                                </div>        
+                                </div>
+
+                                <div class = "bloque-campo-texto">
+                                    <label for="DNI_acu1" class="titulo-campo-texto">
+                                        <p>Identificación</p>
+                                        <input type="text" name="DNI_acu1" id="DNI_acu1" placeholder="Ingresa tu DNI" class="campo-texto">
+                                    </label>
+                                </div>
+
+                                <div class = "bloque-campo-texto">
+                                    <label for="Ocupacion_acu1" class="titulo-campo-texto">
+                                        <p>Ocupación</p>
+                                        <input type="text" name="ocupacion_acu1" id="ocupacion_acu1" placeholder="Ingresa tu ocupación" class="campo-texto">
+                                    </label>
+                                </div>
+                            </section>
+
+                            <!-- Datos del acudiente 2 -->
+                            <h4 class="titulo-seccion">Acudiente 2</h4>
+                            <div class="flex-row-combobox">
+                                <select id="comboBox-acu2" name="comboBox-acu2" class="comboBox-acu2">
+                                    <option value="Madre">Madre</option>
+                                    <option value="Padre">Padre</option>
+                                    <option value="Hermano(a)">Hermano(a)</option>
+                                    <option value="Abuelo(a)">Abuelo(a)</option>
+                                    <option value="Tío(a">Tío(a)</option>
+                                    <option value="Primo(a)">Primo(a)</option>
+                                    <option value="Otro(a)">Otro(a)</option>
+                                </select>
+                                <input type="text" name="otro-acu2" id="otro-acu2" placeholder="Cual?" class="campo-texto-otro">
                             </div>
-                        </div>
+
+                            <section class="datos-acudiente2">
+                                <div class = "bloque-campo-texto">
+                                    <label for="nombre1_madre" class="titulo-campo-texto">
+                                        <p>Primer nombre</p>
+                                        <input type="text" name="nombre1_madre" id="nombre1_madre" placeholder="Ingresa tu primer nombre" class="campo-texto">
+                                    </label>
+                                </div>
+
+                                <div class = "bloque-campo-texto">
+                                    <label for="nombre2_madre" class="titulo-campo-texto">
+                                        <p>Segundo nombre</p>
+                                        <input type="text" name="nombre2_madre" id="nombre2_madre" placeholder="Ingresa tu segundo nombre" class="campo-texto">
+                                    </label>
+                                </div>
+
+                                <div class = "bloque-campo-texto">
+                                    <label for="apellido1_madre" class="titulo-campo-texto">
+                                        <p>Primer apellido</p>
+                                        <input type="text" name="apellido1_madre" id="apellido1_madre" placeholder="Ingresa tu primer apellido" class="campo-texto">
+                                    </label>
+                                </div>
+
+                                <div class = "bloque-campo-texto">
+                                    <label for="apellido2_madre" class="titulo-campo-texto">
+                                        <p>Segundo apellido</p>
+                                        <input type="text" name="apellido2_madre" id="apellido2_madre" placeholder="Ingresa tu segundo apellido" class="campo-texto">
+                                    </label>
+                                </div>
+
+                                <div class = "bloque-campo-texto">
+                                    <label for="DNI_madre" class="titulo-campo-texto">
+                                        <p>Identificación</p>
+                                        <input type="text" name="DNI_madre" id="DNI_madre" placeholder="Ingresa tu DNI" class="campo-texto">
+                                    </label>
+                                </div>
+
+                                <div class = "bloque-campo-texto">
+                                    <label for="Ocupacion_madre" class="titulo-campo-texto">
+                                        <p>Ocupación</p>
+                                        <input type="text" name="ocupacion_madre" id="ocupacion_madre" placeholder="Ingresa tu ocupación" class="campo-texto">
+                                    </label>
+                                </div>
+                            </section>
+                            
+                        </section>
+
+
+                        <!--*************************  Sección (datos del estudiante)  *************************-->
+                        <section class="datosEstudiantes-cont seccion" id="datosEstudiantes-cont">
+                            
+                            <!-- Titulo principal -->
+                            <div class="titulo-principal-cont">
+
+                                <div class="titulo-principal-recuadro1">
+                                    <!-- Titulo de la sección principal -->
+                                    <h3>Datos de los estudiantes</h3>
+
+                                    <!-- linea vertical -->
+                                    <div></div>
+                                </div>
+
+                                <div class="titulo-principal-recuadro2">
+                                    <!-- Elementos -->
+                                    <h4>Los campos (*) son obligatorios</h4>
+                                </div>
+
+                                <!-- imagen -->
+                                <img src="/MATRÍCULA_FINANCIERA\CSS\UI_Prematricula_Cliente\img\Encuesta.png" alt="Encuesta"
+                                width="188px">
+
+                                <!-- Recuadro de alfondo (Se vera en vista movil) -->
+                                <div class="titulo-principal-recuadro-fondo"></div>
+                            </div>
+                            
+                            <!-- Lista o sección de los estudiantes agregados-->
+                            <section class="seccion-estudiantes-agregados">
+
+                                <!-- Recuadros con los nombres de cada estudiante registrado.
+                                Estos deben generarse automaticamente dentro de este mismo
+                                contenedor, cada vez que el usuario agrega un estudiante-->
+
+                                <!-- Modelo de referencia -->
+                                <div class="recuadro_estudiante">
+                                    <span class="material-symbols-outlined icon-manage-accounts">manage_accounts</span>
+                                    <h5 class="nombre-estudiante">Estudiante 1</h5>
+                                    <!--Lapiz (debe aparecer cuando se clikee en este recuadro)-->
+                                    <!-- <span class="material-symbols-outlined icon-edit">edit</span> -->
+                                </div>  
+
+                                <div class="recuadro_estudiante">
+                                    <span class="material-symbols-outlined icon-manage-accounts">manage_accounts</span>
+                                    <h5 class="nombre-estudiante">Milena Galindo</h5>
+                                    <!--Lapiz (debe aparecer cuando se clikee en este recuadro)-->
+                                    <!-- <span class="material-symbols-outlined icon-edit">edit</span> -->
+                                </div>  
+
+                                <div class="recuadro_estudiante">
+                                    <span class="material-symbols-outlined icon-manage-accounts">manage_accounts</span>
+                                    <h5 class="nombre-estudiante">Camilo Galindo</h5>
+                                    <!--Lapiz (debe aparecer cuando se clikee en este recuadro)-->
+                                    <!-- <span class="material-symbols-outlined icon-edit">edit</span> -->
+                                </div>  
+
+                                <div class="recuadro_estudiante">
+                                    <span class="material-symbols-outlined icon-manage-accounts">manage_accounts</span>
+                                    <h5 class="nombre-estudiante">Maylen Possu</h5>
+                                    <!--Lapiz (debe aparecer cuando se clikee en este recuadro)-->
+                                    <!-- <span class="material-symbols-outlined icon-edit">edit</span> -->
+                                </div>  
+                            </section>
+
+                            <hr class="ln-hor-separadora">
+
+                            <h4>Datos de ...</h4>
+
+                            <!----------------------------------------------------------------------------
+                                Datos personales del estudiante - CONTENEDOR #1  
+                            ---------------------------------------------------------------------------->
+                            <div class="estudiante-cont-1">
+                                
+                                <!-- Titulo contenedor -->
+                                <h4 class="titulo-seccion">Datos personales</h4>
+                                
+                                <!-- flex horizontal para la primera parte del contenedor -->
+                                <div class="flex-estudiante-cont-1">
+                                    <div class="flex-foto-estudiante">
+                                        <!-- foto del estudiante -->
+                                        <img src="https://img.freepik.com/fotos-premium/feliz-emocionada-retrato-mujer-estudio-exito-confianza-liderazgo-sonrisa-felicidad-mentalidad-disenadora-creativa-africana-joven-profesional-aislada-fondo-gris_590464-213015.jpg"
+                                                width="200px">
+                                    </div>
+
+                                    <div class="grid-estudiante-cont-1">
+                                        <!-- Campos de texto -->
+                                        <div class = "bloque-campo-texto">
+                                            <label for="nombre1_est" class="titulo-campo-texto">
+                                                <p>Primer nombre</p>
+                                                <input type="text" name="nombre1_est" id="nombre1_est" placeholder="Ingresa tu primer nombre" class="campo-texto">
+                                            </label>
+                                        </div>   
+
+                                        <div class = "bloque-campo-texto">
+                                            <label for="nombre2_est" class="titulo-campo-texto">
+                                                <p>Segundo nombre</p>
+                                                <input type="text" name="nombre2_est" id="nombre2_est" placeholder="Ingresa tu segundo nombre" class="campo-texto">
+                                            </label>
+                                        </div>       
+
+                                        <div class = "bloque-campo-texto">
+                                            <label for="apellido1_est" class="titulo-campo-texto">
+                                                <p>Primer apellido</p>
+                                                <input type="text" name="apellido1_est" id="apellido1_est" placeholder="Ingresa tu primer apellido" class="campo-texto">
+                                            </label>
+                                        </div>
+                                        
+                                        <div class = "bloque-campo-texto">
+                                            <label for="apellido2_est" class="titulo-campo-texto">
+                                                <p>Segundo apellido</p>
+                                                <input type="text" name="apellido2_est" id="apellido2_est" placeholder="Ingresa tu segundo apellido" class="campo-texto">
+                                            </label>
+                                        </div>        
+                                    </div>
+                                </div>
+                                
+                                <!-- flex horizontal para la segunda parte del contenedor -->
+                                <div class="flex-estudiante-cont-1">
+                                    <!-- Campos-->
+                                    <div class = "bloque-campo-texto">
+                                        <label for="nombre1_est" class="titulo-campo-texto">
+                                            <p>Primer nombre</p>
+                                            <input type="text" name="nombre1_est" id="nombre1_est" placeholder="Ingresa tu primer nombre" class="campo-texto">
+                                        </label>
+                                    </div>   
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!--*************************  Sección (datos de la institución)  *************************-->
+                        <section class="datosMatricula-cont seccion" id="datosMatricula-cont">
                         
-                        <!-- flex horizontal para la segunda parte del contenedor -->
-                        <div class="flex-estudiante-cont-1">
-                            <!-- Campos-->
-                            <div class = "bloque-campo-texto">
-                                <label for="nombre1_est" class="titulo-campo-texto">
-                                    <p>Primer nombre</p>
-                                    <input type="text" name="nombre1_est" id="nombre1_est" placeholder="Ingresa tu primer nombre" class="campo-texto">
-                                </label>
-                            </div>   
-                        </div>
-                    </div>
-                </section>
+                            <!-- Titulo principal -->
+                            <div class="titulo-principal-cont">
 
+                                <div class="titulo-principal-recuadro1">
+                                    <!-- Titulo de la sección principal -->
+                                    <h3>Datos de la institución</h3>
 
-                <!--*************************  Sección (datos de la institución)  *************************-->
-                <section class="datosMatricula-cont" id="datosMatricula-cont">
-                    <h3>Datos de la institución</h3>
-                    <!-- Datos de la institución -->
-                    <h4 class="titulo-seccion">Datos de la institución</h4>
-                    <section class="datos-institucion">
-                        <div class="form-columnas"> <!--Fila 1-->
-                            <!--Datos...-->
-                        </div>
-                    </section>
-                </section>
+                                    <!-- linea vertical -->
+                                    <div></div>
+                                </div>
 
-                <!-- <button class="guardar-btn"> Sumbit </button> -->
-                <button class="button-53" role="button">Button 53</button>
-            </form>
+                                <div class="titulo-principal-recuadro2">
+                                    <!-- Elementos -->
+                                    <h4>Los campos (*) son obligatorios</h4>
+                                </div>
+
+                                <!-- imagen -->
+                                <img src="/MATRÍCULA_FINANCIERA\CSS\UI_Prematricula_Cliente\img\Encuesta.png" alt="Encuesta"
+                                width="188px">
+
+                                <!-- Recuadro de alfondo (Se vera en vista movil) -->
+                                <div class="titulo-principal-recuadro-fondo"></div>
+                            </div>
+
+                            <!-- Datos de la institución -->
+                            <h4 class="titulo-seccion">Datos de la institución</h4>
+                            <section class="datos-institucion">
+                                <div class="form-columnas"> <!--Fila 1-->
+                                    <!--Datos...-->
+                                </div>
+                            </section>
+                        </section>
+
+                        <!-- <button class="guardar-btn"> Sumbit </button> -->
+                        <button class="button-53" role="button">Button 53</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
-
     </body>
  </html> 
