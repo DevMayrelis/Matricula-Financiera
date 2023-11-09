@@ -34,14 +34,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 800);
         }
     });
-
-
-    /* Script para ocultar o mostrar los campos de texto ocultos 
-    **********************************************************************************/
-    const btnToggle = document.querySelector('.toggle-btn'); 
-
-    btnToggle.addEventListener('click', function (){
-        document.getElementById('sidebar').classList.toggle('active');
-       
-    });
 });
