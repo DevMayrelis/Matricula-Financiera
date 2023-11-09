@@ -1,59 +1,183 @@
 /*
-SIDEBAR.
+SIDEBAR 1 (ESCRITORIO).
 **************************************************************************
-Aquí van todos los estilos del sidebar del formulario de preregistro
+Aquí van todos los estilos de este sidebar del formulario de preregistro
 **************************************************************************/
 
-.sidebar {
-    width: 230px; /* Ancho del sidebar */
-    height: 100%;
-    position: fixed; /* Fija el sidebar en su posición */
-    left: 0; /* Lo fija en el lado izquierdo */
-    top: 0; /* Lo fija en la parte superior */
+/* Cuerpo del sidebar (Sin fijar) */
+.sidebar{
+
+	/*Forma  ·········································*/
+
+	width: 154px;
+    height: 416px;
+    position: relative; /* Fija el sidebar en su posición */
+    left: 8px; /* Lo fija en el lado izquierdo */
+    top: -195px; /* Lo fija en la parte superior */
+    padding: 13px; /* Espaciado interno del sidebar */
+	border-radius: 20px;
+	position: relative;
+	user-select: none;
+	animation: animacion-inicial 1.2s ease-in-out forwards;
+
+	/*Diseño ·········································*/
+
     background-color: rgb(244, 67, 54); /* Color de fondo del sidebar */
     color: #fff; /* Color de texto del sidebar */
-    padding: 20px; /* Espaciado interno del sidebar */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+				rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+/* Cuerpo del sidebar (fijado) */
+.sidebar.fixed {
 
+	/*Forma  ·········································*/
+	
+	height: 416px;
+	position: fixed;
+	left: 8px;
+	top: 10px; 
+}
 
-/**/ 
-#sidebar {
-	position: fixed; 
-	width: 220px;
-	height: 100%;
-    background:#911;
-    left: -210px;
-    transition: all 500ms linear ;
-}
-#sidebar.active {
-	left: 0;
+/* Contenedor del logo del sidebar*/
+.sidebar-logo{
 
+	/*Forma  ·········································*/
+
+	text-align: center; /*Centramos la imagen*/
 }
-#sidebar ul li {
-   color: rgba(230,230,230, .9);
-   padding:30px 15px;
-   border-bottom:1px solid rgba(100, 100, 100, .3);  
-}
-#sidebar .toggle-btn {
+
+/* Contenedor del menú del sidebar*/
+.sidebar-menu-cont{
+
+	/*Forma  ·········································*/
+
+	/*FLEX BOX*/
+	display: flex;
+	flex-direction: column;
+
+	top: 46px;
+	left: 11px;
+	width: 188px;
+	height: auto;
+	padding: 28px;
+	padding-top: 30px;
 	position: absolute;
-	left: 235px;
-	top: 20px;
-	cursor: pointer;
+	box-sizing: border-box;
+	border-radius: 20px;
+	background-color: white;
 
-}
-#sidebar .toggle-btn span {
-	display: block;
-	width: 45px;
-	text-align: center;
-	font-size:20px;
-	border: 1px solid #000;
+	/*Diseño ·········································*/
+	
+	background-color: white;
 }
 
-#sidebar circle {
-	height: 450px;
-	width: 450px;
-	background-color:rgb(0, 150, 2500) ;
-	border-radius: 30%;
+/*Selector descendente para aplicarle formato a la imagen dentro
+del contenedor del menú del sidebar*/
+.sidebar-menu-cont img{
+
+	/*Forma  ·········································*/
+	
+	margin-bottom: 20px;
 }
+
+/* Título del menú del sidebar*/
+.sidebar-menu-titulo-flex{
+
+	/*Forma  ·········································*/
+
+	/*Posición y dimensiones del recuadro*/
+	position: relative;
+	width: 165px;
+	height: 30px;
+	left: -28px;
+	margin-bottom: 20px;
+	
+	/*Bordes del recuadro*/
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+
+	/*Contenido del recuadro*/
+	align-items: center; 
+	padding: 1rem;
+	padding-left: 9px;
+	box-sizing: border-box;
+	
+	/*FLEX BOX*/
+	display: flex;
+	flex-direction: row;
+	column-gap: 0.8rem;
+
+	/*Diseño ·········································*/
+
+	/*Color de fondo del recuadro*/
+	background-color: rgb(244, 67, 54);
+}
+
+
+.icon-personal-bag{
+	color: #fff;
+}
+
+@keyframes animacion-inicial {
+	0% {
+	  left: -100px;
+	  opacity: 0;
+	}
+	100% {
+	  left: 8;
+	  opacity: 1;
+	}
+  }
+
+
+
+
+
+
+/* -----------------------------------------------------------------
+                            RESPONSIVE
+--------------------------------------------------------------------*/ 
+/*
+Querys (@media)
+********************************************************************
+Con esto podemos especificarle a la página, como queremos 
+que se vean ciertos elementos, bajo ciertas resoluciones o 
+tamaño de la ventana
+*******************************************************************/     
+
+/*  ......................................... 
+        Pantalla menor de 900 pixeles 
+......................................... */
+	@media (max-width: 900px){ 
+
+		#sidebar1 {
+			
+			/*Forma  ·········································*/
+			
+			/*Se oculta el sidebar bajo cierta condición 
+			(esto para ocultar su estilo de escritorio y activar la 
+			de dispositivos moviles que es el sidebar horizontal)*/
+			display: none; 
+		}
+
+		.sidebar.fixed {
+			
+			/*Forma  ·········································*/
+			
+			/* Propiedades del cuerpo del sidebar (fijado) */
+			height: 0px;
+			position: none;
+			left: 0px;
+			top: 0px; 
+		}
+
+		.contenedor-global-formulario.fix{
+			
+			/*Forma  ·········································*/
+			
+			/*Propiedades del contenedor que abarca todos los 
+			elementos del formulario  cuando se fija el sidebar*/
+			margin-left: 35px;      
+		}
+	}
