@@ -1,0 +1,203 @@
+/*
+SIDEBAR 2 (DISPOSITIVOS MÓVILES).
+**************************************************************************
+Aquí van todos los estilos de este sidebar del formulario de preregistro
+**************************************************************************/
+
+/* Cuerpo del sidebar (Sin fijar) */
+.sidebar2{
+
+    /*Forma  ·········································*/
+
+    display: none;
+	/* min-width: 230px; */
+    width: 100%; 
+    height: auto;
+    position: relative; /* Fija el sidebar en su posición */
+    box-sizing: border-box; 
+    margin-bottom: 40px;
+
+    user-select: none;
+
+    /* scrollbar- */
+    overflow-x:scroll; /* Habilita la barra de desplazamiento horizontal */
+    overflow-y:hidden; /* Oculta la barra de desplazamiento vertical */
+    scrollbar-width: thin; /* "auto", "thin" o "none" */
+
+    /* Valor de z-index mayor que el contenido principal, de esta forma los
+    campos de entrada no estaran por encima del sidebar */
+    z-index: 3; 
+
+	/*Diseño ·········································*/
+
+    /* Color de fondo del sidebar */
+    background-color: rgb(255, 255, 255);
+    
+    /* Color y grosor de la barra de desplazamiento */
+    scrollbar-color: #ffffff rgb(240, 240, 240); 
+
+    /*Acciones  ······································*/
+
+    transition: box-shadow 0.3s ease;
+}
+
+/* Cuerpo del sidebar (fijado) */
+.sidebar2.fixed {
+
+	/*Forma  ·········································*/
+	
+	position: fixed;
+ 
+    /*Diseño ·········································*/
+
+    /*Sombreado*/
+    box-shadow: rgba(153, 153, 157, 0.25) 0px 13px 27px -5px, rgba(255, 122, 122, 0.3) 0px 8px 16px -8px;
+}
+
+/* Contenedores del sidebar que contienen el titulo y elementos circulares*/
+.sidebar2-cont-item-flex{
+
+    /*Forma  ·········································*/
+    
+    /* Ajusta el tamaño del contenedor interno al contenido del texto */
+    width: auto;
+    height: 62px;
+    white-space: nowrap; /* Evita el salto de línea de los elementos internos */
+
+    /*FLEX BOX*/
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.7rem;
+
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+
+    /*Diseño ·········································*/
+
+    /* Color de texto de los títulos de cada contenedor del sidebar */
+    color: rgb(244, 67, 54); 
+
+    /*Acciones  ······································*/
+    
+    transition: margin cubic-bezier(.18,.89,.32,1.28) 0.9s;
+}
+
+/* Atributos del 'Anchor' para los hipervinculos*/
+.sidebar2-cont-item-flex a{
+
+    /*Forma ·········································*/
+
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    text-decoration: none;
+}
+
+/* Anchor' () */
+.sidebar2-cont-item-flex a:link { /*...*/
+
+    /*Diseño ·········································*/
+
+    color: pink;
+}
+
+/* Anchor' (Si se visita) */
+.sidebar2-cont-item-flex a:visited { 
+
+    /*Diseño ·········································*/
+
+    color: rgb(244, 67, 54);
+}
+
+/* Anchor' (subrayado al pasar por encima del mouse) */
+.sidebar2-cont-item-flex a:hover {
+
+    /*Diseño ·········································*/
+
+    /* Eliminar el subrayado al pasar el mouse por encima*/
+    text-decoration: none;
+}
+
+.sidebar2-cont-item-flex:hover{
+    background-color: rgb(255, 184, 184);
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* Elementos circulares del sidebar*/
+.sidebar2-item-shape-flex{
+
+    /*Forma  ·········································*/
+
+    width: 36px;
+    height: 36px;
+    border-radius: 5rem;
+    align-items: center; /* Centra el contenido horizontalmente */
+    line-height: 36px; /* Centra verticalmente (según la altura del contenedor) */
+
+    /*Diseño ·········································*/
+
+    color: #ffffff;  /*Color del texto*/
+    background-color: rgb(247, 87, 87); /*Color del circulo*/
+}
+
+
+
+
+
+
+/* -----------------------------------------------------------------
+                            RESPONSIVE
+--------------------------------------------------------------------*/ 
+/*
+Querys (@media)
+********************************************************************
+Con esto podemos especificarle a la página, como queremos 
+que se vean ciertos elementos, bajo ciertas resoluciones o 
+tamaño de la ventana
+*******************************************************************/     
+
+/*  ......................................... 
+        Pantalla menor de 900 pixeles 
+......................................... */
+
+	@media (max-width: 900px) { 
+
+		#sidebar2{
+
+			/*Forma  ·········································*/
+
+			/*FLEX BOX*/
+			display: flex;
+			flex-direction: row;
+			justify-content: center; /* Centrar horizontalmente */
+			column-gap: 2rem;
+		}
+
+        .contenedor-global-formulario.fix-sidebar2{
+            
+            /*Forma  ·········································*/
+            
+            /*Propiedades del contenedor que abarca todos los 
+            elementos del formulario  cuando se fija este sidebar*/
+            margin-top: 110px;      
+        }
+	}
+/*  ......................................... 
+    Pantalla menor de 600 pixeles 
+......................................... */
+    @media (max-width: 600px) { 
+
+        #sidebar2{
+
+            /*Forma  ·········································*/
+
+            padding-left: 34px;
+            padding-right: 39px;
+            justify-content :left; /* Justificar a la izquierda */
+        }
+    }
