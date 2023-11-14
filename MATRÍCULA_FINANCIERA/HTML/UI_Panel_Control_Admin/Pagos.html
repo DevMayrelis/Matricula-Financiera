@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos</title>
+    <link rel="stylesheet" href="/Matricula-Financiera/MATRÍCULA_FINANCIERA/CSS/UI_Panel_Control_Admin/Acudientes.css"> 
+    <link rel="stylesheet" href="/Matricula-Financiera/MATRÍCULA_FINANCIERA/CSS/UI_Panel_Control_Admin/Cont.css"> 
+    <link rel="stylesheet" href="/Matricula-Financiera/MATRÍCULA_FINANCIERA/CSS/UI_Panel_Control_Admin/sidebar.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    
+    <div class="sidebar">
+        <h2><span class="material-symbols-outlined">
+            school
+            </span>La gran esperanza</h2>
+
+        <section style="align-items: center;">
+            <img src="" alt=""><button class="estilobotonpanel">Panel de control</button>
+        </section>
+
+        <section><h5>_______ Opciones</h5></section>
+
+        <nav>
+            <ul>
+                <li ><a href="/MATRÍCULA_FINANCIERA/HTML/UI_PANEL_CONTROL/Bancos.html"> <span class="material-symbols-outlined">
+                    account_balance</span>Banco</a></li>
+                <li><a href="/MATRÍCULA_FINANCIERA/HTML/UI_PANEL_CONTROL/Estudiantes.html"><img src="" alt=""><span class="material-symbols-outlined">
+                    diversity_3
+                    </span>Estudiantes</a></li>
+                <li><a href=""><img src="" alt=""><span class="material-symbols-outlined">
+                    supervisor_account
+                    </span>Acudientes</a></li>
+                <li><a href=""><img src="" alt=""><span class="material-symbols-outlined">
+                    description
+                    </span>Matriculas</a></li>
+                <li><a href=""><img src="" alt=""><span class="material-symbols-outlined">
+                    payments
+                    </span>Pagos</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="contenedor-global-formulario">
+        
+        <div class="barraTop">
+            <h5>Admin 43646 <span class="material-symbols-outlined">
+                account_circle
+                </span></h5>
+        </div>
+
+        <div class="estiloContenido">
+            <h1>_____Pagos</h1>
+
+            <div style="padding: 20px;">
+                <span style="color: #fe9801"> <b>Buscar</b><input type="text" placeholder="Buscar"></span>
+            </div>
+
+            <div>
+            <table>
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Recibo</th>
+                    <th>Fecha</th>
+                    <th>Código matrícula</th>
+                    <th>Estudiante</th>
+                    <th>Concepto</th>
+                    <th>Medio de pago</th>
+                    <th>Monto</th>
+                </tr>
+                <thead>
+                <tbody id = "">    
+                     <!-- Aquí se mostrarán los registros -->
+                </tbody>   
+            </table>
+            </div>
+            <hr>
+
+            <div class="botones" style="padding: 50px;">
+                <button class="estilobotones">Anterior</button>
+                <button class="estilobotones">1</button>
+                <button class="estilobotones">Siguiente</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
