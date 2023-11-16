@@ -8,10 +8,7 @@
   box-sizing: border-box;
 }
 
-/* Bordered form */
-form {
-  border: 8px solid #f1f1f1;
-}
+
 
 /*--------------NAVEGACION SUPERIOR RESPONSIVA---------*/
 /*Color de fondo rojo a la navegación superior */
@@ -88,9 +85,21 @@ form {
 /*-------------------------LOGIN------------------------------------------*/
 /* Estilo para el contenedor del formulario de inicio de sesión */
 
+/* Bordered form */
+form
+    {
+      width: 380px;
+      height: 515px;
+      border: 8px solid #f1f1f1;
+      box-shadow: 8px 4px 8px 8px;
+      display: flex;
+      justify-content: center;
+      border-radius: 15px;
+    }
 
  /* Estilo personalizado para el contenedor del formulario */
-.form-container {
+.form-container 
+{
   position: absolute;
   max-width: 100px; /* Establece el ancho máximo deseado para hacerlo más pequeño */
   margin: 0 auto; /* Centra horizontalmente el formulario */
@@ -135,14 +144,26 @@ form {
 /* Full-width inputs */
 input[type=text], input[type=contraseña]
  {
+  outline: 0;
   width: 100%;
-  padding: 12px 5px;
-  margin: 0;
-  display: inline-block;
   border: 1px solid #ccc;
-  box-sizing: border-box;
+  padding: 10px;
 }
 
+form label
+        {
+          font-weight: 500;
+          padding: 10px;
+        }
+
+.box-visible
+          {
+            width: 100;
+            height: auto;
+            display: flex;
+            justify-content: none;
+
+          }
 .login-button:hover {
   opacity: 0.8;
 }
