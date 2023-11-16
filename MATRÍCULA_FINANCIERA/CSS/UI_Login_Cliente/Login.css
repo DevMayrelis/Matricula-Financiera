@@ -214,15 +214,15 @@ button:hover
 
 /*----------IMAGEN LOGIN--------------*/
  
-.imagen-login {
-  background-image: url('Img/img_login.jpg');
-  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
-  width: 80px; /* Establece el ancho  */
-  height: 80px; /* Establece la altura */
-  margin: 0 auto; /* Centra horizontalmente el div */
-  text-align: center; /* Centra el contenido del div horizontalmente */  
-  
-}
+.imagen-login
+          {
+            background-image: url('Img/img_login.jpg');
+            background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+            width: 80px; /* Establece el ancho  */
+            height: 80px; /* Establece la altura */
+            margin: 0 auto; /* Centra horizontalmente el div */
+            text-align: center; /* Centra el contenido del div horizontalmente */  
+          }
 
 /* Estilo del footer */
 .footer {
