@@ -4,13 +4,23 @@ SIDEBAR 1 (ESCRITORIO).
 Aquí van todos los estilos de este sidebar del formulario de preregistro
 **************************************************************************/
 
+/*  ####################################################
+
+                Contenedor del sidebar
+
+    Se modifica solo la apariencia del sidebar sin 
+    contar su contenido o elementos internos que lo 
+    componen
+
+#######################################################*/
+
 /* Cuerpo del sidebar (Sin fijar) */
 .sidebar{
 
-	/*Forma  ·········································*/
+	/*Propiedades  ···································*/
 
 	width: 154px;
-    height: 416px;
+    height: 432px;
     position: relative; /* Fija el sidebar en su posición */
     left: 8px; /* Lo fija en el lado izquierdo */
     top: -195px; /* Lo fija en la parte superior */
@@ -18,20 +28,24 @@ Aquí van todos los estilos de este sidebar del formulario de preregistro
 	border-radius: 20px;
 	position: relative;
 	user-select: none;
-	animation: animacion-inicial 1.2s ease-in-out forwards;
 
+	
 	/*Diseño ·········································*/
-
+	
     background-color: rgb(244, 67, 54); /* Color de fondo del sidebar */
     color: #fff; /* Color de texto del sidebar */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-				rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+	/*Acciones  ······································*/
+	
+	animation: animacion-inicial 1.2s ease-in-out forwards;
 }
 
 /* Cuerpo del sidebar (fijado) */
 .sidebar.fixed {
 
-	/*Forma  ·········································*/
+	/*Propiedades  ···································*/
 	
 	height: 416px;
 	position: fixed;
@@ -39,27 +53,37 @@ Aquí van todos los estilos de este sidebar del formulario de preregistro
 	top: 10px; 
 }
 
+/*  ####################################################
+
+          Contenedores internos del sidebar
+
+#######################################################*/
+
 /* Contenedor del logo del sidebar*/
 .sidebar-logo{
 
-	/*Forma  ·········································*/
+	/*Propiedades  ···································*/
 
 	text-align: center; /*Centramos la imagen*/
+	position: relative;
+	top: -10px;
 }
 
 /* Contenedor del menú del sidebar*/
 .sidebar-menu-cont{
 
-	/*Forma  ·········································*/
+	/*Propiedades  ···································*/
 
 	/*FLEX BOX*/
 	display: flex;
 	flex-direction: column;
 
-	top: 46px;
+	top: 145px;
 	left: 11px;
 	width: 188px;
 	height: auto;
+	max-height: 400px;
+	min-height: 277px;
 	padding: 28px;
 	padding-top: 30px;
 	position: absolute;
@@ -72,19 +96,21 @@ Aquí van todos los estilos de este sidebar del formulario de preregistro
 	background-color: white;
 }
 
-/*Selector descendente para aplicarle formato a la imagen dentro
-del contenedor del menú del sidebar*/
+/*Selector descendente para aplicarle formato a la imagen 
+dentro del contenedor del menú del sidebar*/
 .sidebar-menu-cont img{
 
-	/*Forma  ·········································*/
+	/*Propiedades  ···································*/
 	
-	margin-bottom: 20px;
+	margin-bottom: -97px;
+	position: relative;
+	transform: translate(-35px,-110px);
 }
 
 /* Título del menú del sidebar*/
 .sidebar-menu-titulo-flex{
 
-	/*Forma  ·········································*/
+	/*Propiedades  ···································*/
 
 	/*Posición y dimensiones del recuadro*/
 	position: relative;
@@ -114,11 +140,55 @@ del contenedor del menú del sidebar*/
 	background-color: rgb(244, 67, 54);
 }
 
+/* Opciones del menu del sidebar*/
+.sidebar-menu-options{
+
+	/*Propiedades  ···································*/
+
+	/*Barra de desplazamiento*/
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	/*Diseño ·········································*/
+
+	/*Grosor de la barra de desplazamiento*/
+	scrollbar-width: thin;
+	scrollbar-color: #ffffff rgb(255, 255, 255);
+}
+
+/*Boton para contraer el sidebar*/
+.sidebar-boton-flecha{
+	
+	/*Propiedades  ···································*/
+
+	position: relative;
+	top: 2px;
+	right: -145px;	
+	text-align: center;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	border-radius: 30px;
+	line-height: 48px;
+
+	/*Diseño ·········································*/
+
+	background-color: rgb(255, 99, 99);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
 
 .icon-personal-bag{
 	color: #fff;
 }
 
+
+
+
+
+
+/* -----------------------------------------------------------------
+                    ANIMACIONES PERSONALIZADAS
+--------------------------------------------------------------------*/ 
 @keyframes animacion-inicial {
 	0% {
 	  left: -100px;
@@ -129,11 +199,6 @@ del contenedor del menú del sidebar*/
 	  opacity: 1;
 	}
   }
-
-
-
-
-
 
 /* -----------------------------------------------------------------
                             RESPONSIVE
@@ -153,7 +218,7 @@ tamaño de la ventana
 
 		#sidebar1 {
 			
-			/*Forma  ·········································*/
+			/*Propiedades  ···································*/
 			
 			/*Se oculta el sidebar bajo cierta condición 
 			(esto para ocultar su estilo de escritorio y activar la 
@@ -163,7 +228,7 @@ tamaño de la ventana
 
 		.sidebar.fixed {
 			
-			/*Forma  ·········································*/
+			/*Propiedades  ···································*/
 			
 			/* Propiedades del cuerpo del sidebar (fijado) */
 			height: 0px;
@@ -174,10 +239,21 @@ tamaño de la ventana
 
 		.contenedor-global-formulario.fix{
 			
-			/*Forma  ·········································*/
+			/*Propiedades  ···································*/
 			
 			/*Propiedades del contenedor que abarca todos los 
-			elementos del formulario  cuando se fija el sidebar*/
+			elementos del formulario  cuando se fija el sidebar
+			(cuando no esta contraido)*/
+			margin-left: 35px;      
+		}
+
+		.contenedor-global-formulario.fix-contraido{
+			
+			/*Propiedades  ···································*/
+			
+			/*Propiedades del contenedor que abarca todos los 
+			elementos del formulario  cuando se fija el sidebar
+			(cuando esta contraido)*/
 			margin-left: 35px;      
 		}
 	}
