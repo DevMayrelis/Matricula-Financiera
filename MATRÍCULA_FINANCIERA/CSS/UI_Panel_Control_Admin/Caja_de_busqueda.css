@@ -1,0 +1,47 @@
+/* Estilo para la caja de búsqueda */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #fe9801;
+}
+
+/* Estilo para el botón Agregar Estudiante */
+.botonMatricula {
+    background-color: #7a8ef5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.botonMatricula:hover {
+    background-color: #ffba33;
+}
+
+/* Estilo para la animación */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Clase para la animación al hacer clic en el botón */
+.animate-pulsate {
+    animation: pulsate 1s ease-out;
+}

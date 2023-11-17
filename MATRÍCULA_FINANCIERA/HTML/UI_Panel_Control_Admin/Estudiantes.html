@@ -1,95 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Estudiante</title>
-	<link rel="stylesheet" type="aqui_la_extencion/css" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+
+    <link rel="stylesheet" href="/MATRÍCULA_FINANCIERA/CSS/UI_Panel_Control_Admin/Caja_de_busqueda.css">
+    <link rel="stylesheet" href="/MATRÍCULA_FINANCIERA/CSS/UI_Panel_Control_Admin/Acudientes.css"> 
+    <link rel="stylesheet" href="/MATRÍCULA_FINANCIERA/CSS/UI_Panel_Control_Admin/Cont.css"> 
+    <link rel="stylesheet" href="/MATRÍCULA_FINANCIERA/CSS/UI_Panel_Control_Admin/sidebar.css"> 
+    <link rel="stylesheet" type="text/css" href="C:\Users\johnn\OneDrive\Escritorio\Estilo_boton_banco.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-	<div>
-		<div><h1>La gran esperanza</h1></div>
-		<div><p>Panel de control</p></div>
-		<div><span>____      Opciones</span></div><br>
-		<div><p>Bancos</p></div>
-		<div><p>Estudiante</p></div>
-		<div><p>Acudiente</p></div>
-		<div><p>Matriculas</p></div>
-		<div><p>Pagos</p></div>
-	</div>
-	<div align="right">
-		<span>Admin 304</span>
-	</div>
-	<hr>
-	<!--  -->
-	<div>
-		<div>
-			<h1>Estudiantes</h1>
-			<div align="right">
-				<button>Agregar Estudiantes</button>
-			</div><br><br>
-		</div>
-		<div>
-		   <body>
-				<select>
-				    <option value="1">Primaria</option>
-				    <option value="2">Bachillerato</option>
-		   	    </select>
-			</body>
-		</div><br>
-		
-		<table width="100%">
-			<tbody>
-			    <tr>
-				    <td width="25%">
-					<div>
-						<input type="checkbox" id="banco">
-					    <span>ID</span><br><br>
-					    <input type="checkbox" id="banco">
-					    <span>1000802104</span><br>
-					    <input type="checkbox" id="banco">
-					    <span>1012302104</span><br>
-					    <input type="checkbox" id="banco">
-					    <span>1045602104</span>
-					</div>
-				    </td>
-				    <td width="25%">
-					<div>
-						<span>Nomres y apellidos</span><br><br>
-						<span>Max Lopez </span><br>
-						
-						<span>Marcos Castro </span><br>
-						
-						<span>Mario Cardenas</span>
-					</div>
-				    </td>
-				    <td width="25%">
-				    	<div align="center">
-				    		<span>Genero</span><br><br>
-				    		<span>M</span><br>
-				    		<span>M</span><br>
-				    		<span>M</span>
-				    	</div>
-				    </td>
-				    <td width="25%">
-				    	<div align="center">
-				    		<span>Fecha de nacimiento</span><br><br>
-				    		<span>DD-MM-AAAA</span><br>
-				    		<span>DD-MM-AAAA</span><br>
-				    		<span>DD-MM-AAAA</span>
-				    	</div>
-				    </td>
-				</tr>		
-			</tbody>
-		</table>
-		<hr>
-	</div>
-	<div>
-		<span>Registro en total: 3</span>
-		<div align="right">
-			<button>Anterior</button>
-			<button>Siguiente</button>
-		</div>
-		
-	</div>
+    
+    <div class="sidebar">
+        <h2><span class="material-symbols-outlined">
+            school
+            </span>La gran esperanza</h2>
+
+        <section style="align-items: center;">
+            <img src="" alt=""><button class="estilobotonpanel">Panel de control</button>
+        </section>
+
+        <section><h5>_______ Opciones</h5></section>
+
+        <nav>
+            <ul>
+                <li ><a href="/MATRÍCULA_FINANCIERA/HTML/UI_Panel_Control_Admin/Bancos.html"> <span class="material-symbols-outlined">
+                    account_balance</span>Banco</a></li>
+                <li><a href="/MATRÍCULA_FINANCIERA/HTML/UI_Panel_Control_Admin/Estudiantes.html"><img src="" alt=""><span class="material-symbols-outlined">
+                    diversity_3
+                    </span>Estudiantes</a></li>
+                <li><a href="/MATRÍCULA_FINANCIERA/HTML/UI_Panel_Control_Admin/Acudientes.html"><img src="" alt=""><span class="material-symbols-outlined">
+                    supervisor_account
+                    </span>Acudientes</a></li>
+                <li><a href="/MATRÍCULA_FINANCIERA/HTML/UI_Panel_Control_Admin/Matrículas.html"><img src="" alt=""><span class="material-symbols-outlined">
+                    description
+                    </span>Matriculas</a></li>
+                <li><a href="/MATRÍCULA_FINANCIERA/HTML/UI_Panel_Control_Admin/Pagos.html"><img src="" alt=""><span class="material-symbols-outlined">
+                    payments
+                    </span>Pagos</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="contenedor-global-formulario">
+        
+        <div class="barraTop">
+            <h5>Admin 0001 <span class="material-symbols-outlined">
+                account_circle
+                </span></h5>
+        </div>
+
+        <div class="estiloContenido">
+            <h1>_____Estudiante</h1>
+
+           <div style="padding: 20px;">
+    <span style="color: #fe9801"> <b>Buscar</b><input type="text" placeholder="Buscar"></span>
+    <span><button class="botonMatricula" onclick="agregarEstudiante()">Agregar Estudiante</button></span>
+</div>
+            <div>
+            <table>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>ID</th>
+                    <th>Nombres y Apellidos</th>
+                    <th>Género</th>
+                    <th>Fecha de Nacimiento</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>004</td>
+                    <td>Juan Carlos Valencia</td>
+                    <td>M</td>
+                    <td>04/junio/2000</td>
+                    
+                </tr>
+            </table>
+            </div>
+            <hr>
+
+            <div class="botones" style="padding: 50px;">
+                <button class="estilobotones">Anterior</button>
+                <button class="estilobotones">1</button>
+                <button class="estilobotones">Siguiente</button>
+            </div>
+        </div>
+    </div>
+<script src="/MATRÍCULA_FINANCIERA/CSS/UI_Panel_Control_Admin/CajaDeBusqueda.js"></script>
+
 </body>
 </html>
