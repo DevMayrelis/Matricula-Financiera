@@ -4,28 +4,45 @@ SIDEBAR 2 (DISPOSITIVOS MÓVILES).
 Aquí van todos los estilos de este sidebar del formulario de preregistro
 **************************************************************************/
 
+/*  ####################################################
+
+                Contenedor del sidebar
+
+    Se modifica solo la apariencia del sidebar sin 
+    contar su contenido o elementos internos que lo 
+    componen
+
+#######################################################*/
+
 /* Cuerpo del sidebar (Sin fijar) */
 .sidebar2{
 
-    /*Forma  ·········································*/
+    /*Propiedades ····································*/
 
+    /* Mostrar / Ocultar elemento*/
     display: none;
-	/* min-width: 230px; */
+
+	/* Dimensiones */
     width: 100%; 
     height: auto;
-    position: relative; /* Fija el sidebar en su posición */
+
+    /* Fija el sidebar en su posición */
+    position: relative;
     box-sizing: border-box; 
     margin-bottom: 40px;
 
+    /*Evitar que el usuario seleccione cualquier elemento
+    del sidebar*/
     user-select: none;
 
     /* scrollbar- */
-    overflow-x:scroll; /* Habilita la barra de desplazamiento horizontal */
-    overflow-y:hidden; /* Oculta la barra de desplazamiento vertical */
-    scrollbar-width: thin; /* "auto", "thin" o "none" */
+    overflow-x:scroll;     /* Habilita el scrollbar (eje X)*/
+    overflow-y:hidden;     /* Oculta el scrollbar   (eje Y)*/
+    scrollbar-width: thin; /* Grosor del scrollbar  (Delgado)*/
 
-    /* Valor de z-index mayor que el contenido principal, de esta forma los
-    campos de entrada no estaran por encima del sidebar */
+    /* Valor de z-index mayor que el contenido principal, 
+    de esta forma los campos de entrada no estaran por 
+    encima del sidebar */
     z-index: 3; 
 
 	/*Diseño ·········································*/
@@ -44,33 +61,45 @@ Aquí van todos los estilos de este sidebar del formulario de preregistro
 /* Cuerpo del sidebar (fijado) */
 .sidebar2.fixed {
 
-	/*Forma  ·········································*/
+	/*Propiedades ····································*/
 	
 	position: fixed;
  
     /*Diseño ·········································*/
 
     /*Sombreado*/
-    box-shadow: rgba(153, 153, 157, 0.25) 0px 13px 27px -5px, rgba(255, 122, 122, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(153, 153, 157, 0.25) 
+     0px 13px 27px -5px,
+     rgba(255, 122, 122, 0.3) 0px 8px 16px -8px;
 }
 
-/* Contenedores del sidebar que contienen el titulo y elementos circulares*/
+/*  ####################################################
+
+    Contenedores de las opciones del menu del sidebar
+
+#######################################################*/
+
 .sidebar2-cont-item-flex{
 
-    /*Forma  ·········································*/
+    /*Propiedades ····································*/
     
-    /* Ajusta el tamaño del contenedor interno al contenido del texto */
+    /* Ajusta el tamaño del contenedor interno al 
+    contenido del texto */
     width: auto;
     height: 62px;
-    white-space: nowrap; /* Evita el salto de línea de los elementos internos */
+    /* Evita el salto de línea de los elementos 
+    internos */
+    white-space: nowrap; 
 
     /*FLEX BOX*/
     display: flex;
     flex-direction: row;
-    column-gap: 0.7rem;
+    column-gap: 0.9rem;
 
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
+    /* Centra el contenido verticalmente */
+    justify-content: center; 
+     /* Centra el contenido horizontalmente */
+    align-items: center;
 
     /*Diseño ·········································*/
 
@@ -85,7 +114,7 @@ Aquí van todos los estilos de este sidebar del formulario de preregistro
 /* Atributos del 'Anchor' para los hipervinculos*/
 .sidebar2-cont-item-flex a{
 
-    /*Forma ·········································*/
+    /*Propiedades ···································*/
 
     display: flex;
     align-items: center;
@@ -128,21 +157,25 @@ Aquí van todos los estilos de este sidebar del formulario de preregistro
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-/* Elementos circulares del sidebar*/
-.sidebar2-item-shape-flex{
+/*  ####################################################
 
-    /*Forma  ·········································*/
+    Otros elementos dentro del contenedor de las opciones
+    del menu del sidebar
 
-    width: 36px;
-    height: 36px;
-    border-radius: 5rem;
-    align-items: center; /* Centra el contenido horizontalmente */
-    line-height: 36px; /* Centra verticalmente (según la altura del contenedor) */
+    - Íconos (color, tamaño)
+
+#######################################################*/
+
+/* íconos de las opciones del menú del sidebar*/
+.sidebar2-cont-item-flex .icon{
+
+    /*Propiedades ····································*/
+
+    font-size: 30px;
 
     /*Diseño ·········································*/
 
-    color: #ffffff;  /*Color del texto*/
-    background-color: rgb(247, 87, 87); /*Color del circulo*/
+    color: rgb(247, 87, 87);
 }
 
 
@@ -169,7 +202,7 @@ tamaño de la ventana
 
 		#sidebar2{
 
-			/*Forma  ·········································*/
+			/*Propiedades ····································*/
 
 			/*FLEX BOX*/
 			display: flex;
@@ -180,7 +213,7 @@ tamaño de la ventana
 
         .contenedor-global-formulario.fix-sidebar2{
             
-            /*Forma  ·········································*/
+            /*Propiedades ····································*/
             
             /*Propiedades del contenedor que abarca todos los 
             elementos del formulario  cuando se fija este sidebar*/
@@ -194,7 +227,7 @@ tamaño de la ventana
 
         #sidebar2{
 
-            /*Forma  ·········································*/
+            /*Propiedades ····································*/
 
             padding-left: 34px;
             padding-right: 39px;
