@@ -81,21 +81,21 @@
                 <!-- Opciones del menu -->
                 <div class="sidebar2-cont-item-flex" id="sidebar-menu-op1" >
                     <a onclick="mostrarSeccion('datos-acudientes-cont')">
-                        <div class="sidebar2-item-shape-flex"> <center>1</center></div>
+                        <span class="material-symbols-outlined icon">cognition</span>
                         <span><h4>Datos de los <br> acudientes</h4></span>
                     </a>
                 </div>
 
                 <div class="sidebar2-cont-item-flex" id="sidebar-menu-op2" >
                     <a onclick="mostrarSeccion('datosEstudiantes-cont')">
-                        <div class="sidebar2-item-shape-flex"> <center>2</center></div>
+                        <span class="material-symbols-outlined icon">Person</span>
                         <span><h4>Datos de los <br> estudiantes</h4></span>
                     </a>
                 </div>
 
                 <div class="sidebar2-cont-item-flex" id="sidebar-menu-op3" >
                     <a onclick="mostrarSeccion('datosMatricula-cont')">
-                        <div class="sidebar2-item-shape-flex"> <center>3</center></div>
+                        <span class="material-symbols-outlined icon">editor_choice</span>
                         <span><h4>Datos de la <br> institución</h4></span>
                     </a>
                 </div>
@@ -107,19 +107,24 @@
                 Sidebar 1 (Escritorio)
                 ==================================================-->
                 <div class="sidebar" id="sidebar1">
+                    <!--Boton para contraer el sidebar -------------------------------->
+                    <a onclick="contraerSidebar()" class="sidebar-boton-flecha">
+                        <span class="material-symbols-outlined icon-arrow_forward_ios">Arrow_Forward_iOS</span>
+                    </a>
+
                     <!--Logo -------------------------------->
                     <div class="sidebar-logo">
                         <!-- imagen -->
                         <img src="/MATRÍCULA_FINANCIERA\IMÁGENES\Ruta_Absoluta\SmartTuit-blanco.png" alt="Logo plataforma"
-                                    width="110px">
+                                    width="100px">
                     </div>
 
                     <!--Contenedor de al frente (menú) ------------------------------->
                     <div class="sidebar-menu-cont">
                         <!-- imagen -->
                         <center>
-                            <img src="/MATRÍCULA_FINANCIERA\CSS\UI_Prematricula_Cliente\img\Portapapeles.png" alt="Computador"
-                                        width="73px">
+                            <img src="/MATRÍCULA_FINANCIERA\CSS\UI_Prematricula_Cliente\img\ImagenSidebar.png" alt="Imagen sidebar 1"
+                                        width="183px">
                         </center>
 
                         <!-- Titulo del menu -->
@@ -129,25 +134,27 @@
                         </div>
 
                         <!-- Opciones del menu (heredado del sidebar 2)-->
-                        <div class="sidebar2-cont-item-flex" id="sidebar-menu-op1" >
-                            <a onclick="mostrarSeccion('datos-acudientes-cont')">
-                                <div class="sidebar2-item-shape-flex"> <center>1</center></div>
-                                <span><h4>Datos de los <br> acudientes</h4></span>
-                            </a>
-                        </div>
+                        <div class="sidebar-menu-options">
+                            <div class="sidebar2-cont-item-flex" id="sidebar-menu-op1" >
+                                <a onclick="mostrarSeccion('datos-acudientes-cont')">
+                                    <span class="material-symbols-outlined icon">cognition</span>
+                                    <span><h4 class="sidebar-item-titulo">Datos de los <br> acudientes</h4></span>
+                                </a>
+                            </div>
 
-                        <div class="sidebar2-cont-item-flex" id="sidebar-menu-op2" >
-                            <a onclick="mostrarSeccion('datosEstudiantes-cont')">
-                                <div class="sidebar2-item-shape-flex"> <center>2</center></div>
-                                <span><h4>Datos de los <br> estudiantes</h4></span>
-                            </a>
-                        </div>
+                            <div class="sidebar2-cont-item-flex" id="sidebar-menu-op2" >
+                                <a onclick="mostrarSeccion('datosEstudiantes-cont')">
+                                    <span class="material-symbols-outlined icon">Person</span>
+                                    <span><h4 class="sidebar-item-titulo">Datos de los <br> estudiantes</h4></span>
+                                </a>
+                            </div>
 
-                        <div class="sidebar2-cont-item-flex" id="sidebar-menu-op3" >
-                            <a onclick="mostrarSeccion('datosMatricula-cont')">
-                                <div class="sidebar2-item-shape-flex"> <center>3</center></div>
-                                <span><h4>Datos de la <br> institución</h4></span>
-                            </a>
+                            <div class="sidebar2-cont-item-flex" id="sidebar-menu-op3" >
+                                <a onclick="mostrarSeccion('datosMatricula-cont')">
+                                    <span class="material-symbols-outlined icon">editor_choice</span>
+                                    <span><h4 class="sidebar-item-titulo">Datos de la <br> institución</h4></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -474,7 +481,7 @@
                         </section>
 
                         <!-- <button class="guardar-btn"> Sumbit </button> -->
-                        <button class="button-53" role="button">Button 53</button>
+                        <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
                     </form>
                 </div>
             </div>
