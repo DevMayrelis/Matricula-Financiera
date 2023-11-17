@@ -10,7 +10,7 @@ window.addEventListener('scroll', function() {
 		const form = document.querySelector('.contenedor-global-formulario');
 
 		/*Modificar esta variable cada vez que el sidebar cambie su propiedad 'top' */
-		const limit = (269 + 10) - 5; // Punto de límite en (px) para fijar el sidebar
+		const limit = (269 + 10) + 1; // Punto de límite en (px) para fijar el sidebar
 	
 	/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                         		 PROCESO
