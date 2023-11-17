@@ -10,5 +10,5 @@ function agregarEstudiante() {
 
     setTimeout(function() {
         button.classList.remove('animate-pulsate');
-    }, 1000);
+    }, 900);
 }
