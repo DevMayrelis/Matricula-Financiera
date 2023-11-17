@@ -16,8 +16,9 @@
  .topnav
        {
         position: relative;
-        background-color: #ea0000;
+        background-color: #f83f3f;
         overflow: hidden;
+
       }
   
   /* Enlaces dentro de la barra de navegación. */
@@ -42,7 +43,7 @@
   /* Color al enlace activo/actual */
   .topnav a.active 
                 {
-                  background-color: #ed0303; /*Remarca Smartuit*/
+                  background-color: #f83f3f; /*Remarca Smartuit*/
                   color: rgb(248, 245, 245); /*Letras*/
                 }
 
@@ -217,7 +218,7 @@ form input[type="text"], input[type="contraseña"]
 /*------BOTON HAZLO AHORA------*/
 .button
       {
-        background-color: hsl(0, 100%, 50%);
+        background-color: hsl(0, 87%, 65%);
         border: none;
         color: white;
         padding: 10px;
@@ -239,7 +240,7 @@ button:hover
 /* Estilo personalizado para etiquetas de "Documento" y "Contraseña" */
 .custom-label 
             {
-              color: #ff0000; /* Color de texto */
+              color: #f83f3f; /* Color de texto */
             }
 /*---------------------------------------------------------------------------------*/
 
