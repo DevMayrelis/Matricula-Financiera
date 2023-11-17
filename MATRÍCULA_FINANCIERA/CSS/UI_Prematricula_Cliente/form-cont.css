@@ -39,7 +39,7 @@ body{
 /*Titulos principales del formulario*/
 .titulo-principal-cont{
 
-    /*Forma  ·········································*/
+    /*Propiedades  ···································*/
 
     width: 100%;
     height: max-content;
@@ -52,7 +52,7 @@ body{
 
 .titulo-principal-cont img{
 
-    /*Forma  ·········································*/
+    /*Propiedades  ···································*/
 
     position: absolute;
     top: -1px;
@@ -66,7 +66,7 @@ body{
 
 .titulo-principal-recuadro-fondo{
     
-    /*Forma  ·········································*/
+    /*Propiedades  ···································*/
 
     width: 149%;
     height: 100%;
@@ -83,7 +83,7 @@ body{
 
 .titulo-principal-recuadro1{
 
-    /*Forma  ·········································*/
+    /*Propiedades  ···································*/
 
     height: 74px;
     border-radius: 19px;
@@ -97,7 +97,7 @@ body{
 
 .titulo-principal-recuadro1 h3{
     
-    /*Forma  ·········································*/
+    /*Propiedades  ···································*/
 
     line-height: 3;
     margin-top: 0px;
@@ -110,7 +110,7 @@ body{
 }
 
 .titulo-principal-recuadro1 div{
-    /*Forma  ·········································*/
+    /*Propiedades  ···································*/
     
     border-radius: 19px;
     position: absolute;
@@ -126,7 +126,7 @@ body{
 
 .titulo-principal-recuadro2{
 
-    /*Forma  ·········································*/
+    /*Propiedades  ···································*/
 
     width: 70%;
     height: 35px;
@@ -144,7 +144,7 @@ body{
 
 .titulo-principal-recuadro2 h4{
 
-    /*Forma  ·········································*/
+    /*Propiedades  ···································*/
 
     position: absolute;
     left: 49px;
@@ -163,7 +163,7 @@ body{
     /*Contenedor que abarca todo el contenido de la página (body)*/
     .cont-padre{
 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         /*FLEX BOX*/
         display: flex;
@@ -174,7 +174,7 @@ body{
     fondo y título de la página*/
     .contenedor-1{
 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         position: relative;
         height: 269px; 
@@ -187,7 +187,7 @@ body{
 
     .contenedor-1-titulo{
 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         position: absolute;
         top: 41px;
@@ -201,7 +201,7 @@ body{
     /*Recuadro superior del contenedor-1*/
     .contenedor-1-contenedor-sup{
 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         height: 72%;
 
@@ -214,7 +214,7 @@ body{
     /*Recuadro inferior del contenedor-1*/
     .contenedor-1-contenedor-inf{
 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         height: 28%;
 
@@ -227,7 +227,7 @@ body{
     /*Contenedor que contiene la imágen del contenedor-1*/
     .contenedor-1-img-contenedor{
                 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
         
         position: absolute;
         top: 58%; /* Posición vertical en el centro */
@@ -243,7 +243,7 @@ body{
     /*Atributos de la Imagen del contenedor anterior*/
     .contenedor-1-img-contenedor img{
                 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         width: 396px;
         height: auto;
@@ -252,7 +252,7 @@ body{
     /*Circulo blanco detrás de la imágen anterior*/
     .contenedor-1-circulo-contenedor{
         
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
         
         position: absolute;
         top: 50%; /* Posición vertical en el centro */
@@ -275,7 +275,7 @@ body{
 
     .contenedor-1-menu{
       
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         position: absolute;
         top: 29%;
@@ -296,13 +296,15 @@ body{
     }
 
 
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                         DATOS DE LOS ACUDIENTES 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
     .contenedor-2{
 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         /*FLEX BOX*/
         display: flex;
@@ -313,7 +315,7 @@ body{
         /*Propiedades cuando no se fija el sidebar*/
         .contenedor-global-formulario{
 
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             position: static;           
             margin-left: 62px;    
@@ -326,18 +328,28 @@ body{
             background-color: white;
         }
 
-         /*Propiedades cuando se fija el sidebar 1*/
+         /*Propiedades cuando se fija el sidebar 1 
+         (Si no esta contraído)*/
         .contenedor-global-formulario.fix{
 
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             margin-left: 242px;      
+        }
+
+         /*Propiedades cuando se fija el sidebar 1
+         (Si esta contraído)*/
+        .contenedor-global-formulario.fix-contraido{
+
+            /*Propiedades  ···································*/
+
+            margin-left: 132px;      
         }
 
     /* Contenedores que contienen los datos*/
     .datos-acudiente1, .datos-acudiente2{
 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         margin-top: -30px;
         margin-bottom: 44px;
@@ -350,7 +362,7 @@ body{
 
     /* Flex del ComboBox con el cajon de texto oculto*/
     .flex-row-combobox {
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         /*FLEX BOX*/
         display: flex;
@@ -373,7 +385,7 @@ body{
     (Padre, Madre...)*/
     .titulo-seccion{
         
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         padding: 2.5px;
         text-align: center;
@@ -392,7 +404,7 @@ body{
     /*Menu desplegable para los campos de los acudientes*/
         .comboBox-acu, .comboBox-acu2{
 
-            /*Forma ·········································*/
+            /*Propiedades ···································*/
 
             width: 100%;
             height: 30px;
@@ -414,7 +426,7 @@ body{
         /* Cambiar el estilo de las opciones desplegables */
         #comboBox-acu1 option, #comboBox-acu2 option{
 
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             padding: 5px 10px; /* Cambia el espacio interior de las opciones */
 
@@ -445,7 +457,7 @@ body{
     /*Campo texto (otro...) */
         .campo-texto-otro{
 
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             /*Esquinas*/
             border-bottom-left-radius: 10px;
@@ -480,7 +492,7 @@ body{
         }
 
         #otro-acu1, #otro-acu2{
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
             display: none;
             overflow: hidden; /* Para ocultar el exceso de contenido */
         }
@@ -489,13 +501,13 @@ body{
         
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-DATOS DE LOS ESTUDIANTES 
+                    DATOS DE LOS ESTUDIANTES 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
     /* Aqui va el listado de los estudiantes agregados que se desea matricular*/
     .seccion-estudiantes-agregados{
 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         /*FLEX BOX*/
         display: flex;
@@ -522,7 +534,7 @@ DATOS DE LOS ESTUDIANTES
     /*Recuadros que estan dentro de la sección de estudiantes agregados*/
         .recuadro_estudiante{
 
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
             
             /* Ajusta el tamaño del contenedor interno al contenido de texto */
             width: auto;
@@ -591,7 +603,7 @@ DATOS DE LOS ESTUDIANTES
     /**/
     .flex-estudiante-cont-1{
 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         /*FLEX BOX*/
         display: flex;
@@ -603,7 +615,7 @@ DATOS DE LOS ESTUDIANTES
 
     .flex-foto-estudiante{
         
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         /*FLEX BOX*/
         display: flex;
@@ -632,7 +644,7 @@ DATOS DE LOS ESTUDIANTES
 
     .grid-estudiante-cont-1{
 
-        /*Forma  ·········································*/
+        /*Propiedades  ···································*/
 
         /* GRID */
         display: grid;
@@ -700,7 +712,7 @@ tamaño de la ventana
 
         .contenedor-1-img-contenedor img{
                 
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             width: 320px;
         }
@@ -708,7 +720,7 @@ tamaño de la ventana
         /*Circulo blanco detrás de la imágen de fondo del contenedor-1*/
         .contenedor-1-circulo-contenedor{
             
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
             
             top: 50%; /* Posición vertical en el centro */
             left: 50%; /* Posición horizontal en el centro */
@@ -719,7 +731,7 @@ tamaño de la ventana
 
         .contenedor-1-menu{
       
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
     
             top: 16%;
             left: 6%;
@@ -734,7 +746,7 @@ tamaño de la ventana
         /*Margen izquierdo del contenedor cuando el sidebar 1 no fijado*/
         .contenedor-global-formulario{
             
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             margin-left: 35px;      
         }
@@ -747,7 +759,7 @@ tamaño de la ventana
 
         .flex-estudiante-cont-1 {
             
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
             
             /*Se cambia la dirección de este flex en columnas */
             flex-direction: column;
@@ -762,7 +774,7 @@ tamaño de la ventana
 
         .contenedor-1-img-contenedor img{
                         
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             width: 280px;
         }
@@ -770,7 +782,7 @@ tamaño de la ventana
         /*Circulo blanco detrás de la imágen de fondo del contenedor-1*/
         .contenedor-1-circulo-contenedor{
     
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
             
             top: 50%; /* Posición vertical en el centro */
             left: 50%; /* Posición horizontal en el centro */
@@ -782,14 +794,14 @@ tamaño de la ventana
         /**/
         .titulo-principal-cont{
 
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             margin-bottom: 267px;
         }
 
         /**/
         .titulo-principal-cont img{
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             top: 93px;
             left: -50px;
@@ -799,7 +811,7 @@ tamaño de la ventana
         /**/
         .titulo-principal-recuadro-fondo{
             
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             top: -70px;
             display: block; 
@@ -809,7 +821,7 @@ tamaño de la ventana
         /**/
         .titulo-principal-recuadro1 h3 {
             
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             font-size: 34px;
             max-width: 78%;
@@ -821,14 +833,14 @@ tamaño de la ventana
 
         .titulo-principal-recuadro1 div {
 
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             display: none;
         }
 
         .titulo-principal-recuadro2{
 
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             top: 56px;
             left: 24%;
@@ -838,10 +850,77 @@ tamaño de la ventana
 
         .titulo-principal-recuadro2 h4{
 
-            /*Forma  ·········································*/
+            /*Propiedades  ···································*/
 
             left: 3%;
             max-width: 23%;
             line-height: 13px;
         }
+    }
+
+
+
+
+
+
+
+    /*Por acomodar....*/
+    .glow-on-hover {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+    
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+    
+    .glow-on-hover:active {
+        color: #000
+    }
+    
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+    
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+    
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+    
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
     }
