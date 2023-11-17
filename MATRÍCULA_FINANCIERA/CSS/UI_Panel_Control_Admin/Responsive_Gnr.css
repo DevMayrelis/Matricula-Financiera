@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+    .sidebar {
+      width: 100%; /* Ancho completo en dispositivos móviles */
+      position: relative; /* Desplaza el contenido principal hacia abajo */
+      margin: 0; /* Elimina el margen lateral */
+    }
+  
+    .contenedor-global-formulario {
+      margin: 0; /* Elimina el margen lateral en dispositivos móviles */
+    }
+  }
