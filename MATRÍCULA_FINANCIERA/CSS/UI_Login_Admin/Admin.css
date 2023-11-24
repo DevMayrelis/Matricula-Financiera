@@ -137,14 +137,13 @@ form {
 }
 
 /* Entradas de ancho completo */
-input[type=text], input[type=contraseña]
- {
-  width: 100%;
-  padding: 12px 5px;
-  margin: 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+/* Full-width inputs */
+form input[type="text"],
+form input[type="password"] {
+    outline: 0;
+    width: 100%; /* Cambia esto según tus necesidades */
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 
 .login-button:hover {
