@@ -816,11 +816,12 @@ tamaño de la ventana
             
             /*Propiedades  ···································*/
 
-            top: -70px;
+            top: -42px;
             display: block;
             height: 310px;
             width: 100%;
             left: 0px;
+            height: 293px;
             border-radius: 28px;
         }
 
@@ -829,7 +830,7 @@ tamaño de la ventana
             
             /*Propiedades  ···································*/
 
-            font-size: 34px;
+            font-size: 26px;
             max-width: 78%;
             line-height: 35.2px;
             top: 25px;
