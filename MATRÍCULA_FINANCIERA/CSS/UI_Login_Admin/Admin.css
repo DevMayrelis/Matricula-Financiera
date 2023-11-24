@@ -215,3 +215,13 @@ button:hover
   vertical-align: middle; /* Se alinea verticalmente la imagen en el centro del footer */
   opacity: 1;
 }
+
+a {
+  text-decoration: none; /* Elimina las líneas subrayadas */
+  color: inherit; /* Utiliza el color del texto original */
+}
+
+/* Estilo adicional para los enlaces dentro de la tabla */
+.login-table a {
+  color: #f83f3f; /* Color específico para los enlaces dentro de la tabla */
+}
