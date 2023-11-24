@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const $visibilityCheckbox = document.getElementById("visible");
 
     // Agrega un evento al botón de Entrar
-    $submitButton.addEventListener("click", (event) => {
+    $submitButton.addEventListener("click", (event) =>
+    {
+        // Verificar si el usuario y la contraseña son correctos
         event.preventDefault(); // Evita que el formulario se envíe por defecto (puedes ajustarlo según tus necesidades)
 
         // Simula la autenticación
@@ -40,11 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function ()
+    {
+        // Matriz simulada de usuarios
     const $passwordInput = document.getElementById('psw');
     const $mostrarContrasenaCheckbox = document.getElementById("mostrarContrasena");
 
-    $mostrarContrasenaCheckbox.addEventListener("change", function () {
+    $mostrarContrasenaCheckbox.addEventListener("change", function ()
+     {
         if ($mostrarContrasenaCheckbox.checked) {
             $passwordInput.setAttribute("type", "text");
         } else {
