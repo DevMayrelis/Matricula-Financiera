@@ -124,13 +124,13 @@ form
 /* -------------- Estilos personalizado para el contenedor del formulario ------------ */
 
       /* Full-width inputs */
-form input[type="text"], input[type="contraseña"]
-                {
-                  outline: 0;
-                  width: 100%;
-                  border: 1px solid #ccc;
-                  padding: 10px;
-                }
+      form input[type="text"],
+      form input[type="password"] {
+          outline: 0;
+          width: 100%; /* Cambia esto según tus necesidades */
+          border: 1px solid #ccc;
+          padding: 10px;
+      }
               
  form label
            {
@@ -260,3 +260,13 @@ button:hover
             vertical-align: middle; /* Alinea verticalmente la imagen en el centro del footer */
             opacity: 1;
           }
+
+          a {
+            text-decoration: none; /* Elimina las líneas subrayadas */
+            color: inherit; /* Utiliza el color del texto original */
+        }
+        
+        /* Estilo adicional para los enlaces dentro de la tabla */
+        .login-table a {
+            color: #f83f3f; /* Color específico para los enlaces dentro de la tabla */
+        }
