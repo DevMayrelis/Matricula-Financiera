@@ -776,8 +776,11 @@ tamaño de la ventana
     @media (max-width: 600px) { 
 
         .contenedor-1-titulo h2{
-            left: 44%;
+            left: -38%;
+            position: relative;
+            top: 2px;
         }
+        
         .contenedor-1-menu{
 
             /*Propiedades  ···································*/
